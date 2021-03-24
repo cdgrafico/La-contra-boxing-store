@@ -1,0 +1,25 @@
+@import "variables";
+
+@mixin h2 {
+    font-size: 1.5rem;
+    color: $darkblue;
+    padding: 1rem;
+}
+
+@mixin logos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@mixin grayscale {
+    display: block;
+    filter: grayscale(0%);
+    transition: .5s;
+}
+
+@mixin grayscale-hov {
+    filter: grayscale(100%);
+    transition: .5s;
+}

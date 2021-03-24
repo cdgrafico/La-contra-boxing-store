@@ -1,0 +1,87 @@
+@import "variables";
+@import "mixin";
+
+/*MAIN*/
+
+main {
+background-color: $darkwhite;
+}
+
+iframe {
+    overflow: hidden;
+}
+
+/*VIDEO Y MAPAS*/
+
+.video {
+    position:relative;
+    width:100%;
+    height:0;
+    padding-bottom:56%;
+    margin-top: 2rem;
+
+    & iframe {
+        position:absolute;
+        left:0;
+        top:0;
+        width:100%;
+        height:100%;
+    }
+}
+
+.mapa{ 
+margin-bottom: 3rem;
+}
+
+/*IMÁGEN CABECERA*/
+
+.cabecera {
+
+    &__img-lg {
+        display: none;
+    }
+
+    &__img-sm {
+        @include grayscale;
+
+        &:hover {
+            @include grayscale-hov;
+        }
+    }
+}
+
+.categoria {
+
+    &__imagen {
+        height: 100px*2.3;
+        overflow: hidden;
+        filter: grayscale(0%);
+        transition: .5s;
+        z-index: 10;
+
+        &:hover {
+            filter: grayscale(100%);
+            transition: .5s;
+        }
+    }
+}
+
+/*MARCAS*/
+
+.titulo {
+    overflow: hidden;
+    text-align: center;
+
+    &--brands {
+        color: $golden;
+    }
+}
+
+.logos {
+    @include logos;
+    margin-bottom: 2rem;
+
+    &__marcas {
+        padding: .5rem;
+    }
+}

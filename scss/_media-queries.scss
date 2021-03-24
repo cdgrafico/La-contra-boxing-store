@@ -1,0 +1,81 @@
+@import "variables";
+
+/*MEDIA QUERY BREAKPOINTS*/
+
+@media only screen and (min-width:576px) {
+    /* Los estilos de acá solo se aplicarán a partir
+    del tamaño de pantalla indicado */
+
+    .anuncio {
+        font-size: 1rem;
+    }
+
+    .cuenta__img--nodisplay {
+        display: block;
+    }
+
+    .cabecera {
+        display: flex;
+        flex-direction: row;
+
+        &__img-lg {
+            @include grayscale;
+            
+            &:hover {
+                @include grayscale-hov;
+            }
+        }
+
+        &__img-sm {
+            display: none;
+        }
+    }
+
+    .categoria {
+        display: flex;
+        flex-direction: row;
+
+        &__imagen {
+            height: 100%;
+            filter: grayscale(0%);
+            transition: .5s;
+
+            &:hover {
+                filter: grayscale(100%);
+                transition: .5s;
+            }
+        }
+    }
+
+    .logos__marcas {
+        padding: 1rem;
+    }
+}
+
+@media only screen and (min-width:992px) {
+
+    .anuncio {
+        margin-top: 2.5rem;
+
+        &__descuento {
+            font-size: 1rem;
+        }
+    }
+
+    .logos__marcas {
+        padding: 0 2rem 2rem 2rem;
+    }
+}
+
+
+@media only screen and (min-width:1200px) {
+
+    .titulo {
+        transform: scale(1.1);
+        padding: 2rem 0 2rem 0;
+    }
+
+    .logos__marcas {
+        padding: 0 3rem 2rem 3rem;
+    }
+}

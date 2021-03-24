@@ -1,0 +1,102 @@
+@import "variables";
+
+/*FORMULARIO CONTACTO*/
+
+.contacto {
+    margin-top: 2rem;
+}
+
+.formFlex {
+    height: 30rem;
+    background-color: $grey2;
+    height: min-content;
+    border-radius: 2rem;
+    padding: 2rem;
+    margin: 2rem 0 2rem 0;
+}
+
+article h1 {
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.imputform {
+    padding: .5rem;
+}
+
+.labelText {
+    width: 20rem;
+    height: 1.5rem;
+    color: $grey2;
+    font-weight: 500;
+    border-radius: 1rem;
+}
+
+.labelImput {
+    height: 2rem;
+    border-radius: 1rem;
+    background-color: $darkwhite;
+    border: 1px solid $grey2;
+    padding: 1rem;
+    font-size: .9rem;
+}
+
+.pais {
+    font-size: .9rem;
+    color: $white;
+    background-color: $grey;
+    height: 2rem;
+    width: 8rem;
+    border-radius: 1rem;
+    padding-left: 1rem;
+}
+
+.textoForm {
+    text-align: center;
+}
+
+.textoContacto {
+    width: 68rem;
+    padding: 2rem;
+}
+
+.textarea {
+    font-size: 1rem;
+    background-color: $darkwhite;
+    border-radius: 1rem;
+    border: 1px solid $grey2;
+    padding: 1rem;
+}
+
+.check {
+    font-weight: 500;
+    font-style: italic;
+    color: $grey;
+    padding: 1rem;
+}
+
+.casilla {
+    width: 1rem;
+    height: 1rem;
+    margin-right: .5rem;
+}
+
+.botonInfo {
+    font-size: .9rem;
+    color: $white;
+    background-color: $grey;
+    border: 1px solid $grey2;
+    height: 2rem;
+    width: 7rem;
+    border-radius: 1rem;
+    margin: 0 1rem 0 1rem;
+}
+
+.enviar {
+    width: 5rem;
+}
+
+
+
+
+

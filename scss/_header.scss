@@ -1,0 +1,121 @@
+@import "variables";
+
+/*HEADER*/
+
+/*ANUNCIO*/
+
+.anuncio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 2.5rem;
+    margin-top: 2.9rem;
+
+    &__descuento {
+        color: $golden2;
+        font-size: 1rem;
+        text-align: center;
+        font-size: .8rem;
+        margin: 0;
+    }
+}
+
+/*BARRA LOGO*/
+
+.barra-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $blue;
+    padding: 1.3rem 0 1.3rem 0;
+    color: $white;
+
+
+    div {
+        height: 4.6rem;
+        width: 500-200px;
+        margin-left: 2rem;
+    }
+
+    .animate__animated:hover {
+        animation: pulse;
+        animation-duration: 1s;
+    }
+}
+
+/*CUENTA*/
+
+.cuenta {
+    display: flex;
+    align-items: center;
+    background-color: $blue;
+    margin: 1rem;
+    transition: .5s;
+
+    &__usuario {
+        font-size: 1rem;
+        text-decoration: none;
+        color: $white;
+        font-weight: 500;
+        text-align: center;
+        width: 10rem;
+
+        &:hover {
+            color: $white;
+        }
+
+        @media only screen and (max-width:576px) {
+            display: none;
+        }
+    }
+
+    &:hover {
+        background-color: $blue;
+        transition: .5s;
+    }
+}
+
+
+/* Los iconos de BS llevan atibutos de FONT*/
+.bi-cart-fill {
+    font-size: 1.5em;
+    color: $white;
+
+}
+
+.bi-person-circle {
+    font-size: 1.5em;
+    color: $white;
+
+}
+
+/*barra de búsqueda*/
+
+/* Style the search field */
+
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 1rem;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    /* Prevent double borders */
+    cursor: pointer;
+
+    &:hover {
+        background: #0b7dda;
+    }
+}

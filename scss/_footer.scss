@@ -1,0 +1,35 @@
+@import "variables";
+
+/*FOOTER*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+background-color: $blue;
+    padding: 2rem;
+
+    .la-contra {
+        display: flex;
+        flex-direction: row;
+
+        &__redes {
+            margin: 0 0 1rem 0;
+        }
+    }
+
+    .info {
+        font-style: normal;
+        text-align: center;
+
+        &--datos {
+            color: $golden;
+            font-size: .9rem;
+            margin-top: 1rem;
+        }
+    }
+}
+
+.catalogo{
+    background-color: $red;
+    height: 10rem;
+}

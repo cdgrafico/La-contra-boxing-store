@@ -1,0 +1,140 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+body .pt-5 {
+  margin-top: 3rem;
+}
+
+.titulo, .titulo-ofertas {
+  color: #f83b3b;
+  font-weight: 600;
+  font-size: 1.75rem;
+}
+
+.titulo-ofertas {
+  color: #b8860b;
+}
+
+.precio {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+i {
+  font-style: normal;
+  font-size: 1rem;
+  font-weight: 400;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+i:hover {
+  color: #b8860b;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+/*ITEMS DESCUENTO*/
+.item_marks {
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  padding: 0;
+}
+
+.item_marks .item_mark {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 60px;
+  text-align: center;
+}
+
+.item_marks .item_discount {
+  background: #8b8b8b;
+  position: relative;
+  z-index: 6;
+}
+
+.item_marks .item_discount2 {
+  background: #26435a;
+  position: relative;
+  z-index: 6;
+}
+
+.item_marks .item_discount3 {
+  background: #f83b3b;
+  position: relative;
+  z-index: 6;
+}
+
+.item_marks .item_discount_3x2 {
+  background: #f3c85d;
+  color: #000000;
+  position: relative;
+  z-index: 6;
+}
+
+.item_marks .item_new {
+  background: #b8860b;
+  position: relative;
+  z-index: 6;
+}
+
+/*estos no los toco para no romper :) */
+.bbb_viewed_item.discount .item_discount {
+  display: inline-block;
+}
+
+.bbb_viewed_item.is_new .item_new {
+  display: inline-block;
+}
+
+.btn.btn-light {
+  border-radius: 2rem;
+}
+
+/*SACAR BORDE "OUTLINE" DE LOS BOTONES BOOTSTARP*/
+.btn {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+/*imágenes animación*/
+img {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+img:hover {
+  -webkit-filter: opacity(70%);
+          filter: opacity(70%);
+  -webkit-transition: .5s;
+  transition: .5s;
+  z-index: 5;
+}
+
+.btn-group-lg > .btn,
+.btn-lg {
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+}
+
+.dropdown.float-right {
+  margin-right: 7rem;
+}
+/*# sourceMappingURL=e-comm.css.map */

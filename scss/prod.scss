@@ -1,0 +1,238 @@
+@import "variables";
+
+/*BODY CARRUSEL*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+
+    div {
+        display: block;
+        position: relative;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+
+        h1 {
+            font-size: 2rem;
+            color: $red;
+        }
+    }
+}
+
+/*CARRUSEL*/
+
+.bbb_viewed {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background: $darkwhite
+}
+
+.bbb_main_container {
+    background-color: $white;
+    padding: 11px
+}
+
+.bbb_viewed_title_container {
+    border-bottom: solid 1px $darkwhite;
+    text-align: center;
+}
+
+.bbb_viewed_title {
+    margin-bottom: 16px;
+    margin-top: 8px
+}
+
+.bbb_viewed_nav_container {
+    position: absolute;
+    right: -5px;
+    bottom: 14px
+}
+
+.bbb_viewed_nav {
+    display: inline-block;
+    cursor: pointer;
+
+    & i {
+        color: $darkwhite;
+        font-size: 18px;
+        padding: 5px;
+        -webkit-transition: all 200ms ease;
+        -moz-transition: all 200ms ease;
+        -ms-transition: all 200ms ease;
+        -o-transition: all 200ms ease;
+        transition: all 200ms ease;
+
+        &:hover i {
+            color: $grey;
+        }
+    }
+}
+
+.bbb_viewed_prev {
+    margin-right: 15px;
+}
+
+.bbb_viewed_slider_container {
+    padding-top: 13px
+}
+
+.bbb_viewed_item {
+    width: 100%;
+    background: $white;
+    border-radius: 2px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+    padding-right: 30px
+}
+
+.bbb_viewed_image {
+    width: 200px;
+    height: 220px;
+
+    & img {
+        display: block;
+        max-width: 100%;
+        transition: .5s;
+
+        &:hover {
+            filter: opacity(70%);
+            transition: .5s;
+        }
+    }
+}
+
+.bbb_viewed_content {
+    width: 100%;
+    margin-top: 25px
+}
+
+.bbb_viewed_price {
+    font-size: 1.5rem;
+    color: $black;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.bbb_viewed_item.discount {
+    text-align: center;
+    color: $red;
+}
+
+.bbb_viewed_price {
+    text-align: center;
+    color: $darkblue;
+
+    span {
+        position: relative;
+        font-size: 12px;
+        font-weight: 400;
+        color: $black;
+        margin-left: 8px;
+
+        &::after {
+            display: inline-block;
+            position: absolute;
+            top: 6px;
+            left: -2px;
+            width: calc(100% + 4px);
+            height: 1px;
+            background: $grey2;
+            content: ''
+        }
+    }
+}
+
+.precioAntes {
+    font-size: 1rem;
+    text-decoration: dashed;
+    color: $grey;
+    text-align: center;
+    text-decoration: line-through;
+}
+
+.bbb_viewed_name {
+    margin-top: 10px;
+    text-align: center;
+
+    & a {
+        font-size: 14px;
+        color: $black;
+        -webkit-transition: all 200ms ease;
+        -moz-transition: all 200ms ease;
+        -ms-transition: all 200ms ease;
+        -o-transition: all 200ms ease;
+        transition: all 200ms ease;
+        text-decoration: none;
+        font-size: 1rem;
+
+        &:hover {
+            color: $golden;
+        }
+    }
+}
+
+.item_marks {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+
+    .item_mark {
+        display: none;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        color: $white;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 60px;
+        text-align: center
+    }
+
+    .item_discount {
+        background: $red;
+        margin-right: 5px;
+    }
+
+    .item_discount2 {
+        background: $blue;
+        margin-right: 5px;
+    }
+    
+    .item_new {
+        background: $golden;
+    }
+}
+
+.bbb_viewed_item.discount .item_discount {
+    display: inline-block
+}
+
+.bbb_viewed_item.discount2 .item_discount2 {
+    display: inline-block
+}
+
+.bbb_viewed_item.is_new .item_new {
+    display: inline-block
+}
+
+@media only screen and (max-width: 992px) {
+
+    .bbb_viewed_nav_container {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+
+    .owl-item {
+        display: flex;
+        justify-content: center;
+    }
+}

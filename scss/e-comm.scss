@@ -1,0 +1,136 @@
+@import "variables";
+@import "mixin";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    background-color: $darkwhite;
+
+    .pt-5 {
+        margin-top: 3rem;
+    }
+}
+
+.titulo {
+    color: $red;
+    font-weight: 600;
+    font-size: 1.75rem;
+}
+
+.titulo-ofertas {
+    @extend .titulo;
+    color: $golden;
+}
+
+.precio {
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+i {
+    font-style: normal;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: .5s;
+
+    &:hover {
+        color: $golden;
+        transition: .5s;
+    }
+}
+
+/*ITEMS DESCUENTO*/
+
+.item_marks {
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    padding: 0;
+
+    .item_mark {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        color: $white;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 60px;
+        text-align: center
+    }
+
+    .item_discount {
+        background: $grey;
+        position: relative;
+        z-index: 6;
+    }
+
+    .item_discount2 {
+        background: $blue;
+        position: relative;
+        z-index: 6;
+    }
+
+    .item_discount3 {
+        background: $red;
+        position: relative;
+        z-index: 6;
+    }
+
+    .item_discount_3x2 {
+        background: $golden2;
+        color: $black;
+        position: relative;
+        z-index: 6;
+    }
+
+    .item_new {
+        background: $golden;
+        position: relative;
+        z-index: 6;
+    }
+}
+
+/*estos no los toco para no romper :) */
+.bbb_viewed_item.discount .item_discount {
+    display: inline-block
+}
+
+.bbb_viewed_item.is_new .item_new {
+    display: inline-block
+}
+
+.btn.btn-light {
+    border-radius: 2rem;
+}
+
+/*SACAR BORDE "OUTLINE" DE LOS BOTONES BOOTSTARP*/
+.btn {
+    box-shadow: none !important;
+}
+
+/*imágenes animación*/
+img {
+    transition: .5s;
+
+    &:hover {
+        filter: opacity(70%);
+        transition: .5s;
+        z-index: 5;
+    }
+}
+
+.btn-group-lg>.btn,
+.btn-lg {
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+}
+
+.dropdown.float-right {
+    margin-right: 7rem;
+}

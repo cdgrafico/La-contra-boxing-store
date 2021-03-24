@@ -1,0 +1,34 @@
+@import "variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+/*ERROR 404*/
+.error-404 {
+    font-size: 8rem;
+    color: $red;
+    font-weight: 700;
+    text-align: center;
+    margin: 0
+}
+
+.texto-error {
+    @extend .error-404;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.btn-secondary {
+    border-radius: 2rem;
+    background-color: $red;
+    border: 0;
+    box-shadow: none !important;
+
+    &:hover {
+        background-color: $golden;
+    }
+}

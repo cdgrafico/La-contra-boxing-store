@@ -1,0 +1,39 @@
+@import "mixin";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Rubik', sans-serif;
+    width: 100%;
+}
+
+/*cCONTENEDOR*/
+
+.container-fluid {
+    padding-right: var(--bs-gutter-x, .0);
+    padding-left: var(--bs-gutter-x, .0);
+    margin-right: 0;
+    margin-left: auto;
+
+    .row {
+        --bs-gutter-x: 0;
+    }
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: $red;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    margin: 0;
+}
+
+h2 {
+    @include h2;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
