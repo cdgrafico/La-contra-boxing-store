@@ -3,7 +3,7 @@
 /* NAV BAR CON MEDIA QUERIES*/
 
 .navbar {
-    background-color: $grey;
+    background-color: $red;
     font-weight: 500;
     position:absolute;
     z-index: 100;
@@ -26,11 +26,26 @@
 
 .nav-item {
     width: 10%;
-    transform: scale(1, 1);
-    transition: .5s;
+    position: relative;
 
-    &:hover {
-        transform: scale(1.05);
+        &:before{
+            content: "";
+            display: block;
+            width: 0;
+            height: 3px;
+            background: $darkwhite;
+            position:absolute;
+            bottom: 0;
+            left: 50%;
+            transition: .3s;
+        }
+        
+    &:hover::before{
+        width: 50%;
+        left: 25%;
+        
+
+        
     }
 }
 

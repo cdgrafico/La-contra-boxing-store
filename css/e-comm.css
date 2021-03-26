@@ -50,6 +50,8 @@ i:hover {
   left: -1px;
   top: -1px;
   padding: 0;
+  -webkit-box-shadow: 2em;
+          box-shadow: 2em;
 }
 
 .item_marks .item_mark {

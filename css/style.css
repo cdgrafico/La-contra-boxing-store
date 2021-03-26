@@ -69,25 +69,92 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #f83b3b;
-  padding: 1.3rem 0 1.3rem 0;
+  background-color: #26435a;
+  padding: 1.5rem 0 1.5rem 0;
   color: #ffffff;
 }
 
-.barra-logo div {
-  height: 4.6rem;
-  width: 300px;
+@media only screen and (max-width: 576px) {
+  .barra-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 1.5em 0 .5em 0;
+  }
+}
+
+.barra-logo .logo-contra {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  width: 10rem;
+  margin: 0 3em 0 3em;
+  padding: .5em 0 .5em 0;
+}
+
+@media only screen and (max-width: 576px) {
+  .barra-logo .logo-contra {
+    margin: 1em 0 0 1em;
+  }
+}
+
+.barra-logo .cuenta {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  height: 3.6em;
+  width: 13em;
   margin-left: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #26435a;
+  margin: 0 2.5em 0 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+  padding: 0 .5em 0 .5em;
+}
+
+@media only screen and (max-width: 576px) {
+  .barra-logo .cuenta {
+    width: 8em;
+    padding: 0 .5em 0 .5em;
+    margin: 1em 1em 0 1em;
+  }
+}
+
+.barra-logo .cuenta__usuario {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  text-align: center;
+}
+
+.barra-logo .cuenta__usuario:hover {
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 576px) {
+  .barra-logo .cuenta__usuario {
+    display: none;
+  }
+}
+
+.barra-logo .cuenta:hover {
+  background-color: #f83b3b;
+  -webkit-transition: .3s;
+  transition: .3s;
+  border-radius: 50px;
 }
 
 .barra-logo .animate__animated:hover {
@@ -97,43 +164,85 @@ h3 {
           animation-duration: 1s;
 }
 
-/*CUENTA*/
-.cuenta {
+/*BARRA BUSQUEDA*/
+.barra-busqueda {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #f83b3b;
-  margin: 1rem;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #f7f7f7;
+  width: 40%;
+  border-radius: 40px;
+  height: 45px;
+  padding: 0 .3em 0 1.2em;
+  margin: 0 2em 0 2em;
 }
 
-.cuenta__usuario {
-  font-size: 1rem;
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: 500;
-  text-align: center;
-  width: 10rem;
-}
-
-.cuenta__usuario:hover {
-  color: #ffffff;
-}
-
-@media only screen and (max-width: 576px) {
-  .cuenta__usuario {
-    display: none;
+@media only screen and (min-width: 992px) {
+  .barra-busqueda {
+    max-width: 36em;
   }
 }
 
-.cuenta:hover {
-  background-color: #26435a;
-  -webkit-transition: .5s;
-  transition: .5s;
+@media only screen and (max-width: 576px) {
+  .barra-busqueda {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    width: 80%;
+    border-radius: 20px;
+    height: 38px;
+  }
+  .barra-busqueda .search-btn {
+    background-color: #f83b3b;
+    height: 1.5em;
+    width: 1.5em;
+  }
+}
+
+.search-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 2.2em;
+  height: 2.2em;
+  background: #f83b3b;
+  border-radius: 50%;
+  padding: .3em;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.search-btn:hover {
+  background-color: #b8860b;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.search-txt {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  color: #27333d;
+  font-size: 1rem;
+  -webkit-transition: .4s;
+  transition: .4s;
+  width: 90%;
 }
 
 /* Los iconos de BS llevan atibutos de FONT*/
@@ -176,7 +285,7 @@ form.example button:hover {
 
 /* NAV BAR CON MEDIA QUERIES*/
 .navbar {
-  background-color: #26435a;
+  background-color: #f83b3b;
   font-weight: 500;
   position: absolute;
   z-index: 100;
@@ -203,15 +312,25 @@ form.example button:hover {
 
 .nav-item {
   width: 10%;
-  -webkit-transform: scale(1, 1);
-          transform: scale(1, 1);
-  -webkit-transition: .5s;
-  transition: .5s;
+  position: relative;
 }
 
-.nav-item:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+.nav-item:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #f7f7f7;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.nav-item:hover::before {
+  width: 50%;
+  left: 25%;
 }
 
 .nav-link {
