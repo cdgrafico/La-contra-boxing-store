@@ -23,8 +23,10 @@
         href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
-    <!-- iconos BS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <!-- iconos Material Design -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
@@ -36,7 +38,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="container-fluid">
+<body class="container-fluid col-xxl-10">
 
     <!-- CABECERA -->
 
@@ -47,63 +49,83 @@
             <div class="barra-logo row d-flex justify-content-between ">
 
                 <div class="logo-contra">
-                    <a href="index.html"><img class="animate__animated" src="multimedia/index/logo-la-contra.svg"
+                    <a href="index.html"><img src="multimedia/index/logo-la-contra.svg"
                             height="70px" alt="logo-la-contra"></a>
                 </div>
 
                 <div class="barra-busqueda">
                     <input class="search-txt" type="text" name="" placeholder="Guantes, protecciones, bolsas">
-                    <a class="search-btn" href="productos.html"><img src="multimedia/index/search-white-24dp.svg" height="24px"
-                            alt=""></a>
+                    <a class="search-btn" href="productos.html"><img src="multimedia/index/search-white-24dp.svg"
+                            height="24px" alt=""></a>
                 </div>
 
                 <!--CUENTA-->
 
                 <div class="cuenta d-flex justify-content-center">
 
-                    <a href="error-404.html"><img class="cuenta__img cuenta__img--nodisplay"
-                            src="multimedia/index/account_circle-white-24dp.svg" height="40px" alt="Usuario"></a>
+                    <a href="error-404.html"><span class="material-icons-round">
+                            account_circle
+                        </span></a>
 
-                    <a class="cuenta__usuario" href="error-404.html"> Usuario</a>
-                    <img class="cuenta__img" src="multimedia/index/shopping_cart-white-24dp.svg" height="36px"
-                        alt="Carrito">
+                    <a href="error-404.html"><span class="material-icons-round">
+                            notifications
+                        </span></a>
+
+                    <a href="error-404.html"><span class="material-icons-round fav">
+                            favorite
+                        </span></a>
+
+                    <a href="error-404.html"><span class="material-icons-round cart">
+                            shopping_cart
+                        </span></a>
                 </div>
 
             </div>
 
 
             <!-- NAV BAR BS -->
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light col-xxl-10">
+                <div class="container-fluid ">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                         aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <img src="multimedia/index/menu-white-24dp.svg" height="32px" alt="">
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link " href="index.html">Inicio</a>
-                            </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="productos.html">Productos</a>
+                                <a class="nav-link" href="productos.html">Nuevos</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="ofertas.html">Ofertas</a>
                             </li>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="index.html">Mujeres</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="index.html">Hombres</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="index.html">Niños</a>
+                            </li>
+
                             <li class="nav-item">
                                 <a class="nav-link" href="nosotros.html">Nosotros</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="contacto.html">Contacto</a>
                             </li>
+                        </ul>
                     </div>
                 </div>
             </nav>
 
             <div>
-                <div class="anuncio bg-dark">
-                    <p class="anuncio__descuento">Aprovecha hasta el 50% de descuento en ofertas</p>
+                <div class="anuncio">
+                    <span class="anuncio__descuento">Aprovecha hasta el 50% de descuento en ofertas</span>
                 </div>
 
         </header>
@@ -114,7 +136,16 @@
             <!-- IMÁGENES CABECERA Y CATEGORÍAS -->
 
             <div class="cabecera">
-                <img class="cabecera__img-lg" src="multimedia/index/principal.jpg" alt="">
+
+                <div class="texto-cabecera">
+                    <img class="campeones" src="multimedia/index/solo-para-camp.svg" alt="">
+                <span class="temporada">Mega descuentos de final de temporada</span>
+                <img class="cabecera__img-lg" src="multimedia/index/nueva-cabecera.jpg" alt="">
+                </div>
+                
+                
+
+                
                 <img class="cabecera__img-sm" src="multimedia/index/principal2.jpg" alt="">
             </div>
 

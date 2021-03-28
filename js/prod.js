@@ -44,5 +44,5 @@ viewedSlider.trigger('next.owl.carousel');
 }
 }
 
-
 });
+

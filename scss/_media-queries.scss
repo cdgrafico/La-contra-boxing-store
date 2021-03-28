@@ -19,11 +19,7 @@
         flex-direction: row;
 
         &__img-lg {
-            @include grayscale;
-            
-            &:hover {
-                @include grayscale-hov;
-            }
+            display: block;
         }
 
         &__img-sm {

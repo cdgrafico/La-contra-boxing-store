@@ -22,7 +22,7 @@ body .pt-5 {
 }
 
 .titulo-ofertas {
-  color: #b8860b;
+  color: #ca981a;
 }
 
 .precio {
@@ -39,7 +39,7 @@ i {
 }
 
 i:hover {
-  color: #b8860b;
+  color: #ca981a;
   -webkit-transition: .5s;
   transition: .5s;
 }
@@ -72,7 +72,7 @@ i:hover {
 }
 
 .item_marks .item_discount2 {
-  background: #26435a;
+  background: #205683;
   position: relative;
   z-index: 6;
 }
@@ -84,14 +84,14 @@ i:hover {
 }
 
 .item_marks .item_discount_3x2 {
-  background: #f3c85d;
+  background: #f3c95e;
   color: #000000;
   position: relative;
   z-index: 6;
 }
 
 .item_marks .item_new {
-  background: #b8860b;
+  background: #ca981a;
   position: relative;
   z-index: 6;
 }

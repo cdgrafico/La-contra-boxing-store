@@ -41,12 +41,27 @@ margin-bottom: 3rem;
         display: none;
     }
 
-    &__img-sm {
-        @include grayscale;
+.texto-cabecera{
+    position: sticky;
+}
+    
+    .temporada{
+        position: absolute;
+        line-height: 120%;
+        font-size: 2rem;
+        font-weight: 600;
+        color: $golden2;
+        top: 80%;
+    left: 52%;
+    width: 40%;
+    }
 
-        &:hover {
-            @include grayscale-hov;
-        }
+    .campeones{ 
+        position:absolute;
+        width: 45%;
+        top: 5%;
+        left: 48%;
+        
     }
 }
 

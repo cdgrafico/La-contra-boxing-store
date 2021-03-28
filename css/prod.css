@@ -6,6 +6,7 @@
 
 body {
   font-family: 'Rubik', sans-serif;
+  background-color: #f7f7f7;
 }
 
 body div {
@@ -28,7 +29,7 @@ body div h1 {
 }
 
 .bbb_main_container {
-  background-color: #ffffff;
+  background-color: #f7f7f7;
   padding: 11px;
 }
 
@@ -168,7 +169,7 @@ body div h1 {
 }
 
 .bbb_viewed_name a:hover {
-  color: #b8860b;
+  color: #ca981a;
 }
 
 .item_marks {
@@ -195,12 +196,12 @@ body div h1 {
 }
 
 .item_marks .item_discount2 {
-  background: #26435a;
+  background: #205683;
   margin-right: 5px;
 }
 
 .item_marks .item_new {
-  background: #b8860b;
+  background: #ca981a;
 }
 
 .bbb_viewed_item.discount .item_discount {

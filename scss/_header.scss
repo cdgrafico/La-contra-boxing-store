@@ -7,8 +7,10 @@
 .anuncio {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
-    height: 2.5rem;
+    background-color: $darkgrey;
+    height: 2.6rem;
     margin-top: 2.9rem;
 
     &__descuento {
@@ -17,15 +19,41 @@
         text-align: center;
         font-size: .8rem;
         margin: 0;
+
+        /*ANIMACION MAQUINA DE ESCRIBIR*/
+        /* https://codepen.io/mistrykaran91/pen/xxOePQd */
+
+        animation-name: typewriter;
+        overflow: hidden;
+        white-space: nowrap;
+        display: inline-block;
+        position: relative;
+        animation-duration: 8s;
+        animation-timing-function: steps(25, end);
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes typewriter {
+
+        0%,
+        100% {
+            width: 0;
+        }
+
+        20%,
+        80% {
+            width: 24em;
+        }
     }
 }
+
 
 /*BARRA LOGO*/
 
 .barra-logo {
     display: flex;
     align-items: center;
-    background-color: $blue;
+    background-color: $red;
     padding: 1.5rem 0 1.5rem 0;
     color: $white;
 
@@ -33,36 +61,39 @@
         display: flex;
         justify-content: center;
         padding: 1.5em 0 .5em 0;
-        }
-    
-        .logo-contra {
-            order: 1;
-            width: 10rem;
-            margin: 0 3em 0 3em;
-            padding: .5em 0 .5em 0;
+    }
 
-            @media only screen and (max-width:576px) {
-                margin: 1em 0 0 1em;
-                }
-        
+    .logo-contra {
+        order: 1;
+        width: 10rem;
+        margin: 0 3em 0 3em;
+        padding: .5em 0 .5em 0;
+
+        @media only screen and (max-width:768px) {
+            margin: 0 0 0 1.5em;
         }
+
+        @media only screen and (max-width:576px) {
+            margin: .5em 0 0 2em;
+            width: 7rem;
+        }
+    }
 
     .cuenta {
         order: 3;
-        height: 3.6em;
-        width: 13em;
+        height: 3em;
+        width: 11em;
         margin-left: 2rem;
         display: flex;
         align-items: center;
-        background-color: $blue;
         margin: 0 2.5em 0 0;
         transition: .3s;
         padding: 0 .5em 0 .5em;
 
-        @media only screen and (max-width:576px) {
-            width: 8em;
+        @media only screen and (max-width:768px) {
+            width: 10em;
             padding: 0 .5em 0 .5em;
-            margin: 1em 1em 0 1em;
+            margin: 1em 1em 0 0;
         }
 
         &__usuario {
@@ -72,27 +103,39 @@
             font-weight: 500;
             text-align: center;
 
+            width: 500px;
+
             &:hover {
                 color: $white;
             }
 
-            @media only screen and (max-width:576px) {
+            @media only screen and (max-width:768px) {
                 display: none;
-                }
+            }
+
+            &:hover {
+
+                transition: .3s;
+                border-radius: 50px;
+            }
         }
 
-        &:hover {
-            background-color: $red;
+        .material-icons-round {
+            color: $darkwhite;
+            font-size: 1.75em;
             transition: .3s;
-            border-radius: 50px;
+
+
+            &:hover {
+                color: $golden2;
+                transition: .3s;
+            }
         }
-    }
 
-
-    .animate__animated:hover {
-        animation: pulse;
-        animation-duration: 1s;
-
+        .cart,
+        .fav {
+            font-size: 1.6em;
+        }
     }
 }
 
@@ -108,41 +151,55 @@
     border-radius: 40px;
     height: 45px;
     padding: 0 .3em 0 1.2em;
-    margin: 0 2em 0 2em;
+    margin-left: auto;
+    margin-right: auto;
 
     @media only screen and (min-width:992px) {
         max-width: 36em;
     }
 
-    @media only screen and (max-width:576px) {
-        order: 0;
-        width: 80%;
-        border-radius: 20px;
-        height: 38px;
-        
+    @media only screen and (max-width:768px) {
 
-        .search-btn{
-            background-color: $red;
-            height: 1.5em;
-            width: 1.5em;
-        }
+        margin-top: .5em;
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
+    @media only screen and (max-width:576px) {
+        order: 0;
+        width: 75%;
+        border-radius: 20px;
+        height: 38px;
+        margin-left: auto;
+        margin-right: auto;
+
+
+        .search-btn {
+            background-color: $red;
+            height: 1.7em;
+            width: 1.7em;
+        }
+
+        .search-txt {
+            font-size: .9rem;
+        }
+    }
 }
 
 .search-btn {
     display: flex;
     justify-content: center;
     align-items: center;
-width: 2.2em;
-height: 2.2em;
+    width: 2.2em;
+    height: 2.2em;
     background: $red;
     border-radius: 50%;
     padding: .3em;
     transition: .3s;
 
-    &:hover{
-        background-color: $golden;
+    &:hover {
+        background-color: $golden2;
         transition: .3s;
     }
 }
@@ -158,34 +215,19 @@ height: 2.2em;
     width: 90%;
 }
 
+/*BARRA DE BUSQUEDA*/
 
-/* Los iconos de BS llevan atibutos de FONT*/
-.bi-cart-fill {
-    font-size: 1.5em;
-    color: $white;
-
-}
-
-.bi-person-circle {
-    font-size: 1.5em;
-    color: $white;
-
-}
-
-/*barra de búsqueda*/
-
-/* Style the search field */
-
+/* campo de busqueda */
 
 form.example input[type=text] {
     padding: 10px;
     font-size: 1rem;
     float: left;
     width: 80%;
-    background: #f1f1f1;
+    background: $darkwhite;
 }
 
-/* Style the submit button */
+/* boton de busqueda */
 form.example button {
     float: left;
     width: 20%;
@@ -198,6 +240,6 @@ form.example button {
     cursor: pointer;
 
     &:hover {
-        background: #0b7dda;
+        background: $blue;
     }
 }
