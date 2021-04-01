@@ -77,7 +77,7 @@ body div h1 {
 .bbb_viewed_item {
   width: 100%;
   background: #ffffff;
-  border-radius: 2px;
+  border-radius: .2em;
   padding-top: 25px;
   padding-bottom: 25px;
   padding-left: 30px;
@@ -169,7 +169,7 @@ body div h1 {
 }
 
 .bbb_viewed_name a:hover {
-  color: #ca981a;
+  color: #daa41e;
 }
 
 .item_marks {
@@ -201,7 +201,7 @@ body div h1 {
 }
 
 .item_marks .item_new {
-  background: #ca981a;
+  background: #daa41e;
 }
 
 .bbb_viewed_item.discount .item_discount {

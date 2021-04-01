@@ -12,7 +12,7 @@
 /*cCONTENEDOR*/
 body {
   background-color: #f7f7f7;
-  background-image: url(/multimedia/index/seigaiha-fondo.svg);
+  background-image: url(https://i.postimg.cc/bvRCdG6z/seigaiha-fondo.png);
   background-size: 65px 43px;
 }
 
@@ -276,10 +276,14 @@ h3 {
     margin-left: auto;
     margin-right: auto;
   }
+  .barra-busqueda img, .barra-busqueda svg {
+    height: 1.2rem;
+  }
   .barra-busqueda .search-btn {
     background-color: #f83b3b;
     height: 1.7em;
     width: 1.7em;
+    padding: 0;
   }
   .barra-busqueda .search-txt {
     font-size: .9rem;
@@ -479,27 +483,59 @@ iframe {
   display: none;
 }
 
+.cabecera__img-sm {
+  display: block;
+}
+
 .cabecera .texto-cabecera {
+  /*CON STICKY EL ELEMENTO QUEDA PEGADO A DONDE ESTA POSICIONADO*/
   position: -webkit-sticky;
   position: sticky;
 }
 
-.cabecera .temporada {
+.cabecera .texto-cabecera .campeones {
   position: absolute;
-  line-height: 120%;
-  font-size: 2rem;
-  font-weight: 600;
-  color: #f3c95e;
-  top: 80%;
-  left: 52%;
-  width: 40%;
+  top: 6%;
+  width: 54%;
+  left: 3%;
 }
 
-.cabecera .campeones {
+@media only screen and (min-width: 576px) {
+  .cabecera .texto-cabecera .campeones {
+    top: 2%;
+    width: 45%;
+    left: 48%;
+  }
+}
+
+.cabecera .texto-cabecera .temporada {
   position: absolute;
-  width: 45%;
-  top: 5%;
-  left: 48%;
+  line-height: 120%;
+  /*con VH (viewport width) el el texto es "responsive", toma el tamano del ancho del viewport*/
+  font-size: 3.3vw;
+  /* 2% del tamaño del viewport*/
+  font-weight: 600;
+  color: #f3c95e;
+  top: 70%;
+  left: 9%;
+  width: auto;
+  height: auto;
+  text-align: center;
+}
+
+@media only screen and (min-width: 576px) {
+  .cabecera .texto-cabecera .temporada {
+    font-size: 2.5vw;
+    top: 75%;
+    left: 52%;
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .cabecera .texto-cabecera .temporada {
+    font-size: 2vw;
+  }
 }
 
 .categoria__imagen {
@@ -526,7 +562,7 @@ iframe {
 }
 
 .titulo--brands {
-  color: #ca981a;
+  color: #daa41e;
 }
 
 .logos {
@@ -698,7 +734,7 @@ footer .info--datos {
 }
 
 .btn-secondary:hover {
-  background-color: #ca981a;
+  background-color: #daa41e;
 }
 
 /*FORMULARIO CONTACTO*/

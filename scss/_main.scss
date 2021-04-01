@@ -4,7 +4,7 @@
 /*MAIN*/
 
 main {
-background-color: $darkwhite;
+    background-color: $darkwhite;
 }
 
 iframe {
@@ -14,23 +14,23 @@ iframe {
 /*VIDEO Y MAPAS*/
 
 .video {
-    position:relative;
-    width:100%;
-    height:0;
-    padding-bottom:56%;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56%;
     margin-top: 2rem;
 
     & iframe {
-        position:absolute;
-        left:0;
-        top:0;
-        width:100%;
-        height:100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
     }
 }
 
-.mapa{ 
-margin-bottom: 3rem;
+.mapa {
+    margin-bottom: 3rem;
 }
 
 /*IMÁGEN CABECERA*/
@@ -41,27 +41,52 @@ margin-bottom: 3rem;
         display: none;
     }
 
-.texto-cabecera{
-    position: sticky;
+    &__img-sm {
+        display: block;
 }
-    
-    .temporada{
-        position: absolute;
-        line-height: 120%;
-        font-size: 2rem;
-        font-weight: 600;
-        color: $golden2;
-        top: 80%;
-    left: 52%;
-    width: 40%;
-    }
 
-    .campeones{ 
-        position:absolute;
-        width: 45%;
-        top: 5%;
-        left: 48%;
-        
+    .texto-cabecera {
+        /*CON STICKY EL ELEMENTO QUEDA PEGADO A DONDE ESTA POSICIONADO*/
+        position: sticky;
+
+        .campeones {
+            position: absolute;
+            top:6%;
+            width: 54%;
+            left: 3%;
+
+            @media only screen and (min-width:576px) {
+            top:2%;
+            width: 45%;
+            left: 48%;
+            }
+        }
+
+        .temporada {
+            position: absolute;
+            line-height: 120%;
+
+/*con VH (viewport width) el el texto es "responsive", toma el tamano del ancho del viewport*/
+            font-size: 3.3vw; /* 2% del tamaño del viewport*/
+            font-weight: 600;
+            color: $golden2;
+            top: 70%;
+            left: 9%;
+            width: auto;
+            height: auto;
+            text-align: center;
+
+            @media only screen and (min-width:576px){
+                font-size: 2.5vw;
+                top: 75%;
+                left: 52%;
+                width: 40%;
+            }
+
+            @media only screen and (min-width:1400px) {
+                font-size: 2vw;
+            }
+        }
     }
 }
 

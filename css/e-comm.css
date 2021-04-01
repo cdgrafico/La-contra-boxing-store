@@ -22,7 +22,7 @@ body .pt-5 {
 }
 
 .titulo-ofertas {
-  color: #ca981a;
+  color: #daa41e;
 }
 
 .precio {
@@ -39,7 +39,7 @@ i {
 }
 
 i:hover {
-  color: #ca981a;
+  color: #daa41e;
   -webkit-transition: .5s;
   transition: .5s;
 }
@@ -91,7 +91,7 @@ i:hover {
 }
 
 .item_marks .item_new {
-  background: #ca981a;
+  background: #daa41e;
   position: relative;
   z-index: 6;
 }
