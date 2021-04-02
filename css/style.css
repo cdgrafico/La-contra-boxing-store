@@ -16,6 +16,11 @@ body {
   background-size: 65px 43px;
 }
 
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .container-fluid {
   padding-right: var(--bs-gutter-x, 0);
   padding-left: var(--bs-gutter-x, 0);
@@ -327,7 +332,6 @@ h3 {
   width: 90%;
 }
 
-/*BARRA DE BUSQUEDA*/
 /* campo de busqueda */
 form.example input[type=text] {
   padding: 10px;
@@ -674,7 +678,6 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #202020;
-  padding: 2rem;
 }
 
 footer .la-contra {
@@ -723,8 +726,35 @@ footer .medios-pago__tarjeta {
 }
 
 .catalogo {
-  background-color: #f83b3b;
-  height: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f3c95e;
+  height: 13em;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+
+.catalogo .texto-catalogo {
+  text-align: center;
+}
+
+.catalogo .search-btn.dos {
+  background: #202020;
+}
+
+.catalogo .search-btn.dos:hover {
+  background: #f83b3b;
 }
 
 * {

@@ -17,6 +17,11 @@ body{
     background-size: 65px 43px;
 }
 
+a{
+    color: $white;
+    text-decoration: none;
+}
+
 .container-fluid {
     padding-right: var(--bs-gutter-x, .0);
     padding-left: var(--bs-gutter-x, .0);
