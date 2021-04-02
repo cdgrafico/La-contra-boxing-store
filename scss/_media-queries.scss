@@ -30,21 +30,23 @@
     .categoria {
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        background-color: $black;
 
         &__imagen {
             height: 100%;
-            filter: grayscale(0%);
-            transition: .5s;
 
-            &:hover {
-                filter: grayscale(100%);
-                transition: .5s;
+            img {
+                transition: .3s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.05);
+                    transition: .3s ease-in-out;
+                    filter: brightness(70%);
+                    filter: contrast(110%);
+                }
             }
         }
-    }
-
-    .logos__marcas {
-        padding: 1rem;
     }
 }
 
@@ -58,9 +60,6 @@
         }
     }
 
-    .logos__marcas {
-        padding: 0 2rem 2rem 2rem;
-    }
 }
 
 
@@ -69,9 +68,5 @@
     .titulo {
         transform: scale(1.1);
         padding: 2rem 0 2rem 0;
-    }
-
-    .logos__marcas {
-        padding: 0 3rem 2rem 3rem;
     }
 }

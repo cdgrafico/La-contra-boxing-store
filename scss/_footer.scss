@@ -27,9 +27,22 @@ background-color: $darkgrey;
             margin-top: 1rem;
         }
     }
+
+    .medios-pago{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    
+    &__tarjeta{
+        width: 3em;
+        margin:.5em;
+    }
+    }
 }
 
 .catalogo{
     background-color: $red;
     height: 10rem;
 }
+
