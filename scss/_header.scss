@@ -173,8 +173,9 @@
         height: 38px;
         margin-left: auto;
         margin-right: auto;
-        
-        img, svg{
+
+        img,
+        svg {
             height: 1.2rem;
         }
 
@@ -220,6 +221,13 @@
     width: 90%;
 }
 
+
+/*Saca el icono X cancelar de la barra de serach*/
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+    appearance: none;
+}
 
 /* campo de busqueda */
 

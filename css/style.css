@@ -281,7 +281,8 @@ h3 {
     margin-left: auto;
     margin-right: auto;
   }
-  .barra-busqueda img, .barra-busqueda svg {
+  .barra-busqueda img,
+  .barra-busqueda svg {
     height: 1.2rem;
   }
   .barra-busqueda .search-btn {
@@ -330,6 +331,13 @@ h3 {
   -webkit-transition: .4s;
   transition: .4s;
   width: 90%;
+}
+
+/*Saca el icono X cancelar de la barra de serach*/
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 /* campo de busqueda */
@@ -680,18 +688,32 @@ footer {
   background-color: #202020;
 }
 
-footer .la-contra {
+footer .footer-abajo {
+  height: 3em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
-footer .la-contra__redes {
-  margin: 0 0 1rem 0;
+footer .footer-abajo .la-contra {
+  background: #f83b3b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1em;
+}
+
+footer .footer-abajo .la-contra__redes {
+  width: 3em;
 }
 
 footer .info {
@@ -753,8 +775,30 @@ footer .medios-pago__tarjeta {
   background: #202020;
 }
 
+@media only screen and (max-width: 576px) {
+  .catalogo .search-btn.dos img {
+    height: 14px;
+  }
+}
+
 .catalogo .search-btn.dos:hover {
   background: #f83b3b;
+}
+
+.sitemap h4 {
+  font-size: 1.3rem;
+}
+
+.sitemap ul li {
+  width: 9em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #f3c95e;
 }
 
 * {

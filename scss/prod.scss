@@ -50,11 +50,13 @@ body {
 }
 
 .bbb_viewed_nav_container {
-    position: absolute;
+    display: flex;
+    justify-content: center;
     margin-top: 1em;
     top: 15%;
     z-index: 100;
-    margin-left: 46vw;
+    padding: auto;
+    ;
 }
 
 .bbb_viewed_nav {
@@ -130,24 +132,24 @@ body {
     color: $red;
 }
 
-    span {
-        position: relative;
-        font-size: 12px;
-        font-weight: 400;
-        color: $black;
-        margin-left: 8px;
+span {
+    position: relative;
+    font-size: 12px;
+    font-weight: 400;
+    color: $black;
+    margin-left: 8px;
 
-        &::after {
-            display: inline-block;
-            position: absolute;
-            top: 6px;
-            left: -2px;
-            width: calc(100% + 4px);
-            height: 1px;
-            background: $grey2;
-            content: ''
-        }
+    &::after {
+        display: inline-block;
+        position: absolute;
+        top: 6px;
+        left: -2px;
+        width: calc(100% + 4px);
+        height: 1px;
+        background: $grey2;
+        content: ''
     }
+}
 
 
 .precioAntes {

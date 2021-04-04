@@ -45,11 +45,16 @@ body div h1 {
 }
 
 .bbb_viewed_nav_container {
-  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 1em;
   top: 15%;
   z-index: 100;
-  margin-left: 46vw;
+  padding: auto;
 }
 
 .bbb_viewed_nav {

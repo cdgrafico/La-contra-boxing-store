@@ -7,14 +7,26 @@ footer {
     flex-direction: column;
     background-color: $darkgrey;
 
-    .la-contra {
+    .footer-abajo {
+        height: 3em;
         display: flex;
-        flex-direction: row;
+        justify-content: flex-end;
 
-        &__redes {
-            margin: 0 0 1rem 0;
+
+        .la-contra {
+
+            background: $red;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0 1em  ;
+
+            &__redes {
+               width: 3em;
+            }
         }
     }
+
 
     .info {
         font-style: normal;
@@ -50,12 +62,20 @@ footer {
     margin-bottom: 2rem;
     padding: 2rem;
 
-    .texto-catalogo{
+    .texto-catalogo {
         text-align: center;
     }
 
     .search-btn.dos {
         background: $darkgrey;
+
+        @media only screen and (max-width:576px) {
+            img {
+                height: 14px;
+            }
+        }
+
+
         &:hover {
             background: $red;
         }
@@ -63,3 +83,19 @@ footer {
 
 }
 
+.sitemap {
+
+    h4 {
+        font-size: 1.3rem;
+    }
+
+    ul {
+
+        li {
+            width: 9em;
+            display: flex;
+            flex-direction: column;
+            color: $golden2;
+        }
+    }
+}
