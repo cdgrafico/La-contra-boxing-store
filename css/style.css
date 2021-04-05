@@ -689,7 +689,7 @@ footer {
 }
 
 footer .footer-abajo {
-  height: 3em;
+  height: 4em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -699,7 +699,7 @@ footer .footer-abajo {
 }
 
 footer .footer-abajo .la-contra {
-  background: #f83b3b;
+  background: #202020;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -709,22 +709,21 @@ footer .footer-abajo .la-contra {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 1em;
+  padding: 0 2em;
+}
+
+footer .footer-abajo .la-contra .copyright {
+  width: 9em;
+}
+
+footer .footer-abajo .la-contra .copyright p {
+  margin: 0;
+  color: #f7f7f7;
+  font-size: .9rem;
 }
 
 footer .footer-abajo .la-contra__redes {
-  width: 3em;
-}
-
-footer .info {
-  font-style: normal;
-  text-align: center;
-}
-
-footer .info--datos {
-  color: #f3c95e;
-  font-size: .9rem;
-  margin-top: 1rem;
+  width: 2.5em;
 }
 
 footer .medios-pago {
@@ -740,10 +739,11 @@ footer .medios-pago {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: 0 0 1em 0;
 }
 
 footer .medios-pago__tarjeta {
-  width: 3em;
+  width: 2.5em;
   margin: .5em;
 }
 
@@ -771,6 +771,12 @@ footer .medios-pago__tarjeta {
   text-align: center;
 }
 
+@media only screen and (min-width: 992px) {
+  .catalogo .barra-busqueda--newsletter {
+    max-width: 24em;
+  }
+}
+
 .catalogo .search-btn.dos {
   background: #202020;
 }
@@ -785,12 +791,24 @@ footer .medios-pago__tarjeta {
   background: #f83b3b;
 }
 
-.sitemap h4 {
-  font-size: 1.3rem;
+.sitemap {
+  padding: 1em 0 1em 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.sitemap ul li {
-  width: 9em;
+.sitemap h4 {
+  font-size: 1rem;
+  margin: 0;
+  color: #f3c95e;
+}
+
+.sitemap div {
+  width: 12em;
+}
+
+.sitemap div li {
+  font-size: .9rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -798,7 +816,31 @@ footer .medios-pago__tarjeta {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: #f3c95e;
+  color: #f7f7f7;
+  margin-bottom: 1em;
+}
+
+.sitemap div li a:hover {
+  color: #8b8b8b;
+}
+
+@media only screen and (max-width: 576px) {
+  .sitemap h4 {
+    font-size: .9rem;
+  }
+  .sitemap div {
+    width: 10em;
+  }
+  .sitemap div ul {
+    padding-left: .7em;
+  }
+  .sitemap div li {
+    font-size: .8rem;
+  }
+}
+
+.sitemap .copyright p {
+  font-size: .8rem;
 }
 
 * {

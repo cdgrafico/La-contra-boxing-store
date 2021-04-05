@@ -62,6 +62,12 @@ body {
 .bbb_viewed_nav {
     display: inline-block;
     cursor: pointer;
+    transition: .3s;
+
+    &:hover{
+        filter: brightness(80%);
+        transition: .3s;
+    }
 
     & i {
         color: $darkwhite;

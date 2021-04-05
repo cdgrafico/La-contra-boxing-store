@@ -60,6 +60,15 @@ body div h1 {
 .bbb_viewed_nav {
   display: inline-block;
   cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.bbb_viewed_nav:hover {
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .bbb_viewed_nav i {

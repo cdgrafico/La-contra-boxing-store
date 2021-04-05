@@ -8,34 +8,31 @@ footer {
     background-color: $darkgrey;
 
     .footer-abajo {
-        height: 3em;
+        height: 4em;
         display: flex;
         justify-content: flex-end;
 
-
         .la-contra {
 
-            background: $red;
+            background: $darkgrey;
             display: flex;
             justify-content: flex-end;
             align-items: center;
-            padding: 0 1em  ;
+            padding: 0 2em;
+
+            .copyright {
+                width: 9em;
+
+                p {
+                    margin: 0;
+                    color: $darkwhite;
+                    font-size: .9rem;
+                }
+            }
 
             &__redes {
-               width: 3em;
+                width: 2.5em;
             }
-        }
-    }
-
-
-    .info {
-        font-style: normal;
-        text-align: center;
-
-        &--datos {
-            color: $golden2;
-            font-size: .9rem;
-            margin-top: 1rem;
         }
     }
 
@@ -44,9 +41,10 @@ footer {
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
+        margin: 0 0 1em 0;
 
         &__tarjeta {
-            width: 3em;
+            width: 2.5em;
             margin: .5em;
         }
     }
@@ -66,6 +64,14 @@ footer {
         text-align: center;
     }
 
+    .barra-busqueda--newsletter {
+
+        @media only screen and (min-width:992px) {
+            max-width: 24em;
+        }
+
+    }
+
     .search-btn.dos {
         background: $darkgrey;
 
@@ -75,7 +81,6 @@ footer {
             }
         }
 
-
         &:hover {
             background: $red;
         }
@@ -84,18 +89,53 @@ footer {
 }
 
 .sitemap {
+    padding: 1em 0 1em 0;
+    flex-wrap: wrap;
 
     h4 {
-        font-size: 1.3rem;
+        font-size: 1rem;
+        margin: 0;
+        color: $golden2;
     }
 
-    ul {
+    div {
+        width: 12em;
 
         li {
-            width: 9em;
+            font-size: .9rem;
             display: flex;
             flex-direction: column;
-            color: $golden2;
+            color: $darkwhite;
+            margin-bottom: 1em;
+
+            a:hover {
+                color: $grey;
+            }
+        }
+    }
+
+    @media only screen and (max-width:576px) {
+
+        h4 {
+            font-size: .9rem;
+        }
+
+        div {
+
+            width: 10em;
+            ul{
+            padding-left: .7em;
+            }
+            li {
+                font-size: .8rem;
+            }
+
+        }
+    }
+
+    .copyright {
+        p {
+            font-size: .8rem;
         }
     }
 }
