@@ -17,9 +17,15 @@ body div {
 }
 
 body div h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #f83b3b;
   text-align: center;
+}
+
+@media only screen and (max-width: 576px) {
+  body div h1 {
+    font-size: 1.5rem;
+  }
 }
 
 /*CARRUSEL*/

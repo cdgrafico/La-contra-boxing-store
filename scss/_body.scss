@@ -39,6 +39,12 @@ h1 {
     font-weight: bold;
     padding-bottom: 1rem;
     margin: 0;
+
+    @media only screen and (max-width:576px) {
+        width: 80%;
+        margin: auto;
+        font-size: 1.2rem;
+    }
     
 }
 

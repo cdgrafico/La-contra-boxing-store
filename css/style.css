@@ -40,6 +40,14 @@ h1 {
   margin: 0;
 }
 
+@media only screen and (max-width: 576px) {
+  h1 {
+    width: 80%;
+    margin: auto;
+    font-size: 1.2rem;
+  }
+}
+
 h2 {
   font-size: 1.5rem;
   color: #27333d;
@@ -469,6 +477,12 @@ iframe {
   overflow: hidden;
 }
 
+@media only screen and (max-width: 992px) {
+  iframe {
+    height: 470px;
+  }
+}
+
 /*VIDEO Y MAPAS*/
 .video {
   position: relative;
@@ -566,8 +580,18 @@ iframe {
   text-align: center;
 }
 
+@media only screen and (min-width: 1200px) {
+  .titulo {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    padding: 1.5em 0 1.5em 0;
+  }
+}
+
 .titulo--brands {
+  font-size: 1.5rem;
   color: #daa41e;
+  font-weight: 600;
 }
 
 .logos {
@@ -599,6 +623,18 @@ iframe {
   .logos__marcas {
     width: 22vw;
     margin-bottom: 1em;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .logos__marcas {
+    width: 7.5vw;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .logos {
+    margin-bottom: 3em;
   }
 }
 
@@ -665,14 +701,6 @@ iframe {
   }
   .anuncio__descuento {
     font-size: 1rem;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .titulo {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-    padding: 2rem 0 2rem 0;
   }
 }
 
@@ -769,6 +797,12 @@ footer .medios-pago__tarjeta {
 
 .catalogo .texto-catalogo {
   text-align: center;
+}
+
+@media only screen and (max-width: 576px) {
+  .catalogo .texto-catalogo P {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 992px) {

@@ -62,6 +62,11 @@ footer {
 
     .texto-catalogo {
         text-align: center;
+        P{
+            @media only screen and (max-width:576px) {
+display:    none;
+                }
+        }
     }
 
     .barra-busqueda--newsletter {

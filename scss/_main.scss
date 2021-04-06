@@ -9,6 +9,10 @@ main {
 
 iframe {
     overflow: hidden;
+
+    @media only screen and (max-width:992px) {
+        height: 470px;
+    }
 }
 
    
@@ -108,8 +112,15 @@ iframe {
     overflow: hidden;
     text-align: center;
 
+    @media only screen and (min-width:1200px) {
+            transform: scale(1.1);
+            padding: 1.5em 0 1.5em 0;  
+    }
+
     &--brands {
+        font-size: 1.5rem;
         color: $golden;
+        font-weight: 600
     }
 }
 
@@ -125,12 +136,19 @@ iframe {
             width: 11vw;
         }
 
-        
         @media only screen and (max-width:576px) {
             width: 22vw;
             margin-bottom: 1em;
         }
 
+        @media only screen and (min-width:1400px) {
+            width: 7.5vw;
+        }
+        
+        }
+
+        @media only screen and (min-width:1200px) {
+            margin-bottom: 3em;
         }
     }
 
