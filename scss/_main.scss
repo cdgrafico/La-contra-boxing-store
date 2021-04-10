@@ -15,9 +15,7 @@ iframe {
     }
 }
 
-   
 /*VIDEO Y MAPAS*/
-
 .video {
     position: relative;
     width: 100%;
@@ -41,13 +39,17 @@ iframe {
 /*IMÁGEN CABECERA*/
 
 .cabecera {
+    padding: 0 0 0 0;
+    background-color: black;
 
     &__img-lg {
         display: none;
+        border: 0;
     }
 
     &__img-sm {
         display: block;
+        border: 0;
 }
 
     .texto-cabecera {
@@ -96,13 +98,16 @@ iframe {
 }
 
 .categoria {
-
+background-color: $darkgrey;
     &__imagen {
-        height: 100px*2.3;
+
         overflow: hidden;
         filter: grayscale(0%);
         transition: .5s;
         z-index: 10;
+    }
+    .img{
+        background-color: $black;
     }
 }
 

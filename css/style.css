@@ -16,6 +16,14 @@ body {
   background-size: 65px 43px;
 }
 
+/*ESTO ES MUCHO MUY IMPORTANTE*/
+img {
+  /*Las imagenes que son enlaces tienen bordes blancos
+    estos les saca este borde*/
+  border: 0;
+  border-style: none;
+}
+
 a {
   color: #ffffff;
   text-decoration: none;
@@ -419,8 +427,8 @@ form.example button:hover {
   margin: auto;
   height: 3px;
   width: 0px;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .nav-item .nav-link:hover:after {
@@ -454,8 +462,8 @@ form.example button:hover {
     bottom: 0;
     left: -100%;
     height: 3px;
-    -webkit-transition: left .3s;
-    transition: left .3s;
+    -webkit-transition: left .3s ease-in-out;
+    transition: left .3s ease-in-out;
   }
   .navbar .navbar-nav .nav-item .nav-link:hover:after {
     left: 0;
@@ -505,12 +513,19 @@ iframe {
 }
 
 /*IMÁGEN CABECERA*/
+.cabecera {
+  padding: 0 0 0 0;
+  background-color: black;
+}
+
 .cabecera__img-lg {
   display: none;
+  border: 0;
 }
 
 .cabecera__img-sm {
   display: block;
+  border: 0;
 }
 
 .cabecera .texto-cabecera {
@@ -564,14 +579,21 @@ iframe {
   }
 }
 
+.categoria {
+  background-color: #202020;
+}
+
 .categoria__imagen {
-  height: 230px;
   overflow: hidden;
   -webkit-filter: grayscale(0%);
           filter: grayscale(0%);
   -webkit-transition: .5s;
   transition: .5s;
   z-index: 10;
+}
+
+.categoria .img {
+  background-color: #000000;
 }
 
 /*MARCAS*/
@@ -659,9 +681,11 @@ iframe {
   }
   .cabecera__img-lg {
     display: block;
+    border: 0;
   }
   .cabecera__img-sm {
     display: none;
+    border: 0;
   }
   .categoria {
     display: -webkit-box;
@@ -674,7 +698,6 @@ iframe {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background-color: #000000;
   }
   .categoria__imagen {
     height: 100%;
@@ -829,6 +852,12 @@ footer .medios-pago__tarjeta {
   padding: 1em 0 1em 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 70%;
 }
 
 .sitemap h4 {
@@ -859,6 +888,12 @@ footer .medios-pago__tarjeta {
 }
 
 @media only screen and (max-width: 576px) {
+  .sitemap {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
   .sitemap h4 {
     font-size: .9rem;
   }
@@ -892,6 +927,11 @@ footer .medios-pago__tarjeta {
   font-weight: 700;
   text-align: center;
   margin: 0;
+}
+
+.body-error {
+  background-image: none;
+  background-color: #ffffff;
 }
 
 .texto-error {
@@ -1006,5 +1046,158 @@ article h1 {
 
 .enviar {
   width: 5rem;
+}
+
+.ih-item {
+  position: relative;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+.ih-item,
+.ih-item * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.ih-item img {
+  width: 100%;
+  height: 100%;
+}
+
+.ih-item.circle .img {
+  position: relative;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+.ih-item.circle .img:before {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+.ih-item.circle .info {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+/*efectos de la imagen*/
+.ih-item.circle.effect13 .info {
+  /*Para agregar color al cuadro sobre la imágen
+  */
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+.ih-item.circle.effect13 .info h3 {
+  visibility: hidden;
+  color: #f7f7f7;
+  position: relative;
+  letter-spacing: .1rem;
+  font-size: 1.8rem;
+  padding: 48% 0 0 0;
+  text-shadow: 0 0 1px black, 0 1px 2px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+@media only screen and (max-width: 992px) {
+  .ih-item.circle.effect13 .info h3 {
+    padding: 40% 0 0 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .ih-item.circle.effect13 .info h3 {
+    font-size: 1.3rem;
+    padding: 40% 0 0 0;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .ih-item.circle.effect13 .info h3 {
+    font-size: 1.4rem;
+    padding: 30% 0 0 0;
+  }
+}
+
+.ih-item.circle.effect13 .info p {
+  visibility: hidden;
+  color: #f7f7f7;
+  padding: .8em;
+  font-size: 1rem;
+  letter-spacing: .1rem;
+  border-top: 5px solid #f3c95e;
+  text-shadow: 0 0 1px black, 0 1px 2px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+@media only screen and (max-width: 576px) {
+  .ih-item.circle.effect13 .info p {
+    border-top: 4px solid #f3c95e;
+    font-size: .8rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .ih-item.circle.effect13 .info p {
+    font-size: .9rem;
+  }
+}
+
+.ih-item.circle.effect13 a:hover .img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-filter: contrast(1.1);
+          filter: contrast(1.1);
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+.ih-item.circle.effect13 a:hover .info {
+  opacity: 1;
+}
+
+.ih-item.circle.effect13 a:hover h3 {
+  visibility: visible;
+}
+
+.ih-item.circle.effect13 a:hover p {
+  visibility: visible;
+}
+
+.ih-item.circle.effect13.from_left_and_right .info h3 {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.ih-item.circle.effect13.from_left_and_right .info p {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.ih-item.circle.effect13.from_left_and_right a:hover h3 {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.ih-item.circle.effect13.from_left_and_right a:hover p {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 /*# sourceMappingURL=style.css.map */

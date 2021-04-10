@@ -17,6 +17,14 @@ body{
     background-size: 65px 43px;
 }
 
+/*ESTO ES MUCHO MUY IMPORTANTE*/
+img{
+    /*Las imagenes que son enlaces tienen bordes blancos
+    estos les saca este borde*/
+    border: 0;
+    border-style: none;
+}
+
 a{
     color: $white;
     text-decoration: none;
