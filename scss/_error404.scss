@@ -10,30 +10,60 @@
 /*ERROR 404*/
 .error-404 {
     font-size: 8rem;
-    color: $red;
+    color: $darkgrey;
     font-weight: 700;
     text-align: center;
-    margin: 0;
+    margin: auto;
+    padding: 2rem 0 0 0;
+
+    @media only screen and (max-width:576px) {
+        font-size: 5rem;
+        padding: 2rem 0 0 0;
+    }
+
+    @media only screen and (max-width:768px) {
+        padding: 1rem 0 0 0;
+    }
 }
 
-.body-error{
+.body-error {
     background-image: none;
-    background-color: $white;
+    background-color: $red;
 }
 
 .texto-error {
     @extend .error-404;
     font-size: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    padding: 0 0 0 0;
+
+    @media only screen and (max-width:576px) {
+        font-size: 1.25rem;
+        padding: 0 0 0 0;
+    }
 }
 
 .btn-secondary {
     border-radius: 2rem;
     background-color: $red;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: $darkgrey;
+    width: 50%;
     border: 0;
     box-shadow: none !important;
 
+    @media only screen and (max-width:576px) {
+        width: 75%;
+    }
+
+    @media only screen and (min-width:768px) {
+        font-size: 1, 5rem;
+    }
+
+
     &:hover {
-        background-color: $golden;
+        background-color: $red;
+
     }
 }

@@ -15,6 +15,11 @@ body .pt-5 {
   margin-top: 3rem;
 }
 
+/*No se ven los botones FLECHA*/
+.boton-gris {
+  display: none;
+}
+
 .titulo, .titulo-ofertas {
   color: #f83b3b;
   font-weight: 600;

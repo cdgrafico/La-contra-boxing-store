@@ -923,32 +923,70 @@ footer .medios-pago__tarjeta {
 /*ERROR 404*/
 .error-404, .texto-error {
   font-size: 8rem;
-  color: #f83b3b;
+  color: #202020;
   font-weight: 700;
   text-align: center;
-  margin: 0;
+  margin: auto;
+  padding: 2rem 0 0 0;
+}
+
+@media only screen and (max-width: 576px) {
+  .error-404, .texto-error {
+    font-size: 5rem;
+    padding: 2rem 0 0 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .error-404, .texto-error {
+    padding: 1rem 0 0 0;
+  }
 }
 
 .body-error {
   background-image: none;
-  background-color: #ffffff;
+  background-color: #f83b3b;
 }
 
 .texto-error {
   font-size: 1.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  padding: 0 0 0 0;
+}
+
+@media only screen and (max-width: 576px) {
+  .texto-error {
+    font-size: 1.25rem;
+    padding: 0 0 0 0;
+  }
 }
 
 .btn-secondary {
   border-radius: 2rem;
   background-color: #f83b3b;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #202020;
+  width: 50%;
   border: 0;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
 }
 
+@media only screen and (max-width: 576px) {
+  .btn-secondary {
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .btn-secondary {
+    font-size: 1, 5rem;
+  }
+}
+
 .btn-secondary:hover {
-  background-color: #daa41e;
+  background-color: #f83b3b;
 }
 
 /*FORMULARIO CONTACTO*/

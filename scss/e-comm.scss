@@ -16,6 +16,11 @@ body {
     }
 }
 
+/*No se ven los botones FLECHA*/
+.boton-gris{
+    display: none;
+}
+
 .titulo {
     color: $red;
     font-weight: 600;
