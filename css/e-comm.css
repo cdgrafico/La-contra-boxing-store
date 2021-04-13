@@ -11,10 +11,6 @@ body {
   background-color: #f7f7f7;
 }
 
-body .pt-5 {
-  margin-top: 3rem;
-}
-
 /*No se ven los botones FLECHA*/
 .boton-gris {
   display: none;

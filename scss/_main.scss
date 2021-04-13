@@ -157,3 +157,29 @@ background-color: $darkgrey;
         }
     }
 
+/*CONTACTO****************/
+
+.titulo-contacto{
+    text-align: center;
+    margin: 2.5em 0 .8em;
+}
+
+article {
+
+    h3{
+        text-transform: uppercase;
+        margin-bottom: 1em;
+    }
+
+    span{
+        margin-bottom: 20px;
+        
+        strong{
+            color: $darkgrey;
+            font-weight: 500;
+        }
+    }
+
+    
+}
+

@@ -12,7 +12,7 @@
 /*cCONTENEDOR*/
 body {
   background-color: #f7f7f7;
-  background-image: url(https://i.postimg.cc/bvRCdG6z/seigaiha-fondo.png);
+  background-image: url("../seigaiha-fondo.svg");
   background-size: 65px 43px;
 }
 
@@ -660,6 +660,26 @@ iframe {
   }
 }
 
+/*CONTACTO****************/
+.titulo-contacto {
+  text-align: center;
+  margin: 2.5em 0 .8em;
+}
+
+article h3 {
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+article span {
+  margin-bottom: 20px;
+}
+
+article span strong {
+  color: #202020;
+  font-weight: 500;
+}
+
 /*MEDIA QUERY BREAKPOINTS*/
 @media only screen and (min-width: 576px) {
   /* Los estilos de acá solo se aplicarán a partir
@@ -976,6 +996,7 @@ footer .medios-pago__tarjeta {
 @media only screen and (max-width: 576px) {
   .btn-secondary {
     width: 75%;
+    font-size: 1rem;
   }
 }
 
@@ -990,100 +1011,292 @@ footer .medios-pago__tarjeta {
 }
 
 /*FORMULARIO CONTACTO*/
-.contacto {
-  margin-top: 2rem;
+:focus {
+  outline: none;
 }
 
-.formFlex {
-  height: 30rem;
-  background-color: #dddddd;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  border-radius: 2rem;
-  padding: 2rem;
-  margin: 2rem 0 2rem 0;
+/* FORMULARIO =================================== */
+.form_wrap {
+  height: 580px;
+  margin: 50px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #dddddd;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-article h1 {
-  padding-top: 1rem;
-  text-align: center;
+/* Informacion de Contacto*/
+.cantact_info {
+  width: 38%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("../fondo-formulario.jpg");
+  background-size: cover;
+  background-position: center center;
 }
 
-.imputform {
-  padding: .5rem;
+@media only screen and (max-width: 576px) {
+  .cantact_info {
+    width: 0;
+  }
 }
 
-.labelText {
-  width: 20rem;
-  height: 1.5rem;
-  color: #dddddd;
-  font-weight: 500;
-  border-radius: 1rem;
+.cantact_info::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #f83b3b;
+  opacity: 0.6;
 }
 
-.labelImput {
-  height: 2rem;
-  border-radius: 1rem;
-  background-color: #f7f7f7;
-  border: 1px solid #dddddd;
-  padding: 1rem;
-  font-size: .9rem;
+@media only screen and (max-width: 576px) {
+  .cantact_info::before {
+    width: 0;
+  }
 }
 
-.pais {
-  font-size: .9rem;
+.info_title,
+.info_items {
+  position: relative;
+  z-index: 2;
   color: #ffffff;
-  background-color: #8b8b8b;
-  height: 2rem;
-  width: 8rem;
-  border-radius: 1rem;
-  padding-left: 1rem;
 }
 
-.textoForm {
+.info_title {
+  margin-bottom: 60px;
+}
+
+.info_title span {
+  font-size: 8rem;
+  display: block;
   text-align: center;
+  margin-bottom: 15px;
 }
 
-.textoContacto {
-  width: 68rem;
-  padding: 2rem;
+.info_title h2 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 700;
+  color: #f7f7f7;
 }
 
-.textarea {
+.info_items p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 1rem;
-  background-color: #f7f7f7;
-  border-radius: 1rem;
-  border: 1px solid #dddddd;
-  padding: 1rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+  /*La pseudo-clase :nth-child()
+    coincide con uno o más elementos en función
+    de su posición entre un grupo de hermanos.*/
 }
 
-.check {
+.info_items p:nth-child(1) span {
+  width: 30px;
+  font-size: 1.5rem;
+  margin-right: 3px;
+}
+
+.info_items p:nth-child(2) span {
+  width: 30px;
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
+
+/* Formulario de contacto*/
+form.form_contact {
+  width: 62%;
+  padding: 30px 40px;
+}
+
+form.form_contact h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #303030;
+  margin-bottom: 30px;
+  padding: 1em 0 0 0;
+}
+
+@media only screen and (max-width: 576px) {
+  form.form_contact h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  form.form_contact {
+    width: 100%;
+  }
+}
+
+form.form_contact .user_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form.form_contact label {
   font-weight: 500;
-  font-style: italic;
-  color: #8b8b8b;
-  padding: 1rem;
 }
 
-.casilla {
-  width: 1rem;
-  height: 1rem;
-  margin-right: .5rem;
-}
-
-.botonInfo {
+form.form_contact input,
+form.form_contact textarea {
+  width: 100%;
+  padding: 8px 0 5px;
+  margin-bottom: 20px;
+  background-color: #dddddd;
+  border: none;
+  border-bottom: 2px solid #303030;
+  color: #202020;
   font-size: .9rem;
-  color: #ffffff;
-  background-color: #8b8b8b;
-  border: 1px solid #dddddd;
-  height: 2rem;
-  width: 7rem;
-  border-radius: 1rem;
-  margin: 0 1rem 0 1rem;
+  font-weight: 400;
 }
 
-.enviar {
-  width: 5rem;
+form.form_contact textarea {
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 90px;
+}
+
+form.form_contact input[type="button"] {
+  width: 160px;
+  background: #f83b3b;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 576px) {
+  form.form_contact input[type="button"] {
+    font-size: .9rem;
+    width: 140px;
+  }
+}
+
+form.form_contact input[type="button"]:hover {
+  background: #d81d1d;
+}
+
+/* Ventana de errores*/
+.modal_wrap {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mensaje_modal {
+  background: #f7f7f7;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  width: 400px;
+  padding: 30px 20px 15px;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 576px) {
+  .mensaje_modal {
+    width: 300px;
+  }
+}
+
+.mensaje_modal h3 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.mensaje_modal h3:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #f7f7f7;
+  margin: 10px 0px 15px;
+}
+
+.mensaje_modal p {
+  font-size: 1rem;
+  color: #303030;
+}
+
+.mensaje_modal p:before {
+  /*ICONO DE ERROR DE MATERIAL DESIGN EN EL MODAL:
+    SE COLOCA CON EL CÓDIGO "CODE POINT"
+    EN EL "CONTENT"*/
+  content: "\e000";
+  /* ES ESTE*/
+  font-family: 'Material Icons';
+  color: #f83b3b;
+  margin-right: .5em;
+  font-size: 1.5rem;
+  /*alineamiento de el Icono con el texto*********/
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: -15%;
+}
+
+#btnClose {
+  display: inline-block;
+  padding: 3px 10px;
+  margin-top: 10px;
+  text-align: center;
+  background: #f83b3b;
+  color: #f7f7f7;
+  border: 2px solid #f83b3b;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+input {
+  padding-left: 10px;
 }
 
 .ih-item {
@@ -1145,7 +1358,7 @@ article h1 {
   visibility: hidden;
   color: #f7f7f7;
   position: relative;
-  letter-spacing: .1rem;
+  letter-spacing: .05rem;
   font-size: 1.8rem;
   padding: 48% 0 0 0;
   text-shadow: 0 0 1px black, 0 1px 2px rgba(0, 0, 0, 0.3);
@@ -1178,7 +1391,7 @@ article h1 {
   color: #f7f7f7;
   padding: .8em;
   font-size: 1rem;
-  letter-spacing: .1rem;
+  letter-spacing: .05rem;
   border-top: 5px solid #f3c95e;
   text-shadow: 0 0 1px black, 0 1px 2px rgba(0, 0, 0, 0.3);
   -webkit-transition: all 0.35s ease-in-out;
