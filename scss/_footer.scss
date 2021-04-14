@@ -61,10 +61,15 @@ footer {
 
     .texto-catalogo {
         text-align: center;
-        P{
+
+        @media only screen and (max-width:576px) {
+            font-size: 1rem;
+        }
+
+        P {
             @media only screen and (max-width:576px) {
-display:    none;
-                }
+                display: none;
+            }
         }
     }
 
@@ -91,6 +96,8 @@ display:    none;
     }
 
 }
+
+/*Sitemap----------------------------*/
 
 .sitemap {
     padding: 1em 0 1em 0;
@@ -122,7 +129,7 @@ display:    none;
     }
 
     @media only screen and (max-width:576px) {
-        
+
         justify-content: center;
         width: 100%;
 
@@ -131,11 +138,12 @@ display:    none;
         }
 
         div {
-
             width: 10em;
-            ul{
-            padding-left: .7em;
+
+            ul {
+                padding-left: .7em;
             }
+
             li {
                 font-size: .8rem;
             }

@@ -50,7 +50,7 @@ iframe {
     &__img-sm {
         display: block;
         border: 0;
-}
+    }
 
     .texto-cabecera {
         /*CON STICKY EL ELEMENTO QUEDA PEGADO A DONDE ESTA POSICIONADO*/
@@ -58,14 +58,14 @@ iframe {
 
         .campeones {
             position: absolute;
-            top:6%;
-            width: 54%;
-            left: 3%;
+            top: 4%;
+                width: 47%;
+                left: 48%;
 
-            @media only screen and (min-width:576px) {
-            top:2%;
-            width: 45%;
-            left: 48%;
+            @media only screen and (max-width:576px) {
+                top: 6%;
+                width: 54%;
+                left: 3%;
             }
         }
 
@@ -73,8 +73,9 @@ iframe {
             position: absolute;
             line-height: 120%;
 
-/*con VH (viewport width) el el texto es "responsive", toma el tamano del ancho del viewport*/
-            font-size: 3.3vw; /* 2% del tamaño del viewport*/
+            /*con VH (viewport width) el el texto es "responsive", toma el tamano del ancho del viewport*/
+            font-size: 3.3vw;
+            /* 2% del tamaño del viewport*/
             font-weight: 600;
             color: $golden2;
             top: 70%;
@@ -83,7 +84,7 @@ iframe {
             height: auto;
             text-align: center;
 
-            @media only screen and (min-width:576px){
+            @media only screen and (min-width:576px) {
                 font-size: 2.5vw;
                 top: 75%;
                 left: 52%;
@@ -98,7 +99,8 @@ iframe {
 }
 
 .categoria {
-background-color: $darkgrey;
+    background-color: $darkgrey;
+
     &__imagen {
 
         overflow: hidden;
@@ -106,7 +108,8 @@ background-color: $darkgrey;
         transition: .5s;
         z-index: 10;
     }
-    .img{
+
+    .img {
         background-color: $black;
     }
 }
@@ -117,16 +120,23 @@ background-color: $darkgrey;
     overflow: hidden;
     text-align: center;
 
+    padding: 1em 0 1em 0;
+
     @media only screen and (min-width:1200px) {
-            transform: scale(1.1);
-            padding: 1.5em 0 1.5em 0;  
+        transform: scale(1.1);
+        padding: 1.5em 0 1.5em 0;
     }
 
     &--brands {
         font-size: 1.5rem;
         color: $golden;
-        font-weight: 600
+        font-weight: 600;
+
+        @media only screen and (max-width:576px) {
+            font-size: 1.2rem;
+        }
     }
+
 }
 
 .logos {
@@ -138,7 +148,7 @@ background-color: $darkgrey;
         margin: auto;
 
         @media only screen and (max-width:768px) {
-            width: 11vw;
+            width: 9vw;
         }
 
         @media only screen and (max-width:576px) {
@@ -147,39 +157,70 @@ background-color: $darkgrey;
         }
 
         @media only screen and (min-width:1400px) {
-            width: 7.5vw;
-        }
-        
+            width: 6.5vw;
         }
 
-        @media only screen and (min-width:1200px) {
-            margin-bottom: 3em;
-        }
     }
+
+    @media only screen and (min-width:1200px) {
+        margin-bottom: 3em;
+    }
+}
 
 /*CONTACTO****************/
 
-.titulo-contacto{
+.titulo-contacto {
     text-align: center;
-    margin: 2.5em 0 .8em;
+    margin: 2em 0 .8em;
+
+    @media only screen and(max-width:576px) {
+        font-size: 1.4rem;
+        text-align: start;
+        margin: 2em 0 .6em 0;
+        width: 100%;
+        
+    }
 }
 
 article {
 
-    h3{
+    h3 {
         text-transform: uppercase;
         margin-bottom: 1em;
+
+        @media only screen and(max-width:576px) {
+            font-size: 1rem;
+        }
     }
 
-    span{
+    span {
         margin-bottom: 20px;
-        
-        strong{
+
+        strong {
             color: $darkgrey;
             font-weight: 500;
         }
     }
-
-    
 }
 
+/*MUJERES*********************************/
+
+.guerreras {
+    position: absolute;
+    top: 0;
+        width: 46%;
+        left: 3%;
+
+    @media only screen and (max-width:576px) {
+        top: 12%;
+        width: 75%;
+        left: -8%;
+    }
+
+    img{
+        /*Las imagenes que son enlaces tienen bordes blancos
+        estos les saca este borde*/
+        border: 0;
+        border-style: none;
+    }
+}

@@ -31,6 +31,10 @@
         animation-duration: 8s;
         animation-timing-function: steps(25, end);
         animation-iteration-count: infinite;
+
+        &--dos{
+            color: $darkwhite;
+        }
     }
 
     @keyframes typewriter {

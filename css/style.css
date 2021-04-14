@@ -109,6 +109,10 @@ h3 {
           animation-iteration-count: infinite;
 }
 
+.anuncio__descuento--dos {
+  color: #f7f7f7;
+}
+
 @-webkit-keyframes typewriter {
   0%,
   100% {
@@ -536,16 +540,16 @@ iframe {
 
 .cabecera .texto-cabecera .campeones {
   position: absolute;
-  top: 6%;
-  width: 54%;
-  left: 3%;
+  top: 4%;
+  width: 47%;
+  left: 48%;
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (max-width: 576px) {
   .cabecera .texto-cabecera .campeones {
-    top: 2%;
-    width: 45%;
-    left: 48%;
+    top: 6%;
+    width: 54%;
+    left: 3%;
   }
 }
 
@@ -600,6 +604,7 @@ iframe {
 .titulo {
   overflow: hidden;
   text-align: center;
+  padding: 1em 0 1em 0;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -614,6 +619,12 @@ iframe {
   font-size: 1.5rem;
   color: #daa41e;
   font-weight: 600;
+}
+
+@media only screen and (max-width: 576px) {
+  .titulo--brands {
+    font-size: 1.2rem;
+  }
 }
 
 .logos {
@@ -637,7 +648,7 @@ iframe {
 
 @media only screen and (max-width: 768px) {
   .logos__marcas {
-    width: 11vw;
+    width: 9vw;
   }
 }
 
@@ -650,7 +661,7 @@ iframe {
 
 @media only screen and (min-width: 1400px) {
   .logos__marcas {
-    width: 7.5vw;
+    width: 6.5vw;
   }
 }
 
@@ -663,12 +674,27 @@ iframe {
 /*CONTACTO****************/
 .titulo-contacto {
   text-align: center;
-  margin: 2.5em 0 .8em;
+  margin: 2em 0 .8em;
+}
+
+@media only screen and (max-width: 576px) {
+  .titulo-contacto {
+    font-size: 1.4rem;
+    text-align: start;
+    margin: 2em 0 .6em 0;
+    width: 100%;
+  }
 }
 
 article h3 {
   text-transform: uppercase;
   margin-bottom: 1em;
+}
+
+@media only screen and (max-width: 576px) {
+  article h3 {
+    font-size: 1rem;
+  }
 }
 
 article span {
@@ -678,6 +704,29 @@ article span {
 article span strong {
   color: #202020;
   font-weight: 500;
+}
+
+/*MUJERES*********************************/
+.guerreras {
+  position: absolute;
+  top: 0;
+  width: 46%;
+  left: 3%;
+}
+
+@media only screen and (max-width: 576px) {
+  .guerreras {
+    top: 12%;
+    width: 75%;
+    left: -8%;
+  }
+}
+
+.guerreras img {
+  /*Las imagenes que son enlaces tienen bordes blancos
+        estos les saca este borde*/
+  border: 0;
+  border-style: none;
 }
 
 /*MEDIA QUERY BREAKPOINTS*/
@@ -843,6 +892,12 @@ footer .medios-pago__tarjeta {
 }
 
 @media only screen and (max-width: 576px) {
+  .catalogo .texto-catalogo {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
   .catalogo .texto-catalogo P {
     display: none;
   }
@@ -868,6 +923,7 @@ footer .medios-pago__tarjeta {
   background: #f83b3b;
 }
 
+/*Sitemap----------------------------*/
 .sitemap {
   padding: 1em 0 1em 0;
   -ms-flex-wrap: wrap;
