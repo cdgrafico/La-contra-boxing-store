@@ -62,9 +62,31 @@
         font-size: 1, 5rem;
     }
 
-
     &:hover {
         background-color: $red;
+        color: $darkwhite !important;
+    }
+}
 
+/*-----TEXTO NEON-----------------------*/
+.luz.on {
+    color: $darkwhite;
+    /*color del texto al cambiar*/
+    text-shadow:
+        1px 1px rgba(255, 255, 255, .1),
+        -1px -1px rgba(0, 0, 0, .88),
+        0px 0px 20px $darkwhite;
+    /*color de la luz del texto*/
+}
+
+.luz {
+    @extend .error-404;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding: 0 0 0 0;
+
+    @media only screen and (max-width:576px) {
+        font-size: 1.25rem;
+        padding: 0 0 0 0;
     }
 }

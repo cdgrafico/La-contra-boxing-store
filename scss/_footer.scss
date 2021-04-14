@@ -59,19 +59,26 @@ footer {
     margin-bottom: 2rem;
     padding: 2rem;
 
+    @media only screen and (max-width:576px) {
+        height: 9em;
+    }
+
     .texto-catalogo {
         text-align: center;
 
         @media only screen and (max-width:576px) {
             font-size: 1rem;
-        }
 
-        P {
-            @media only screen and (max-width:576px) {
+            P {
                 display: none;
+            }
+
+            h3 {
+                font-size: 1rem;
             }
         }
     }
+
 
     .barra-busqueda--newsletter {
 

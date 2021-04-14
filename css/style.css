@@ -501,7 +501,13 @@ iframe {
   width: 100%;
   height: 0;
   padding-bottom: 56%;
-  margin-top: 2rem;
+  margin-top: 3em;
+}
+
+@media only screen and (max-width: 576px) {
+  .video {
+    margin-top: 2em;
+  }
 }
 
 .video iframe {
@@ -557,12 +563,12 @@ iframe {
   position: absolute;
   line-height: 120%;
   /*con VH (viewport width) el el texto es "responsive", toma el tamano del ancho del viewport*/
-  font-size: 3.3vw;
+  font-size: 3.6vw;
   /* 2% del tamaño del viewport*/
   font-weight: 600;
   color: #f3c95e;
   top: 70%;
-  left: 9%;
+  left: 6%;
   width: auto;
   height: auto;
   text-align: center;
@@ -638,7 +644,7 @@ iframe {
       flex-wrap: wrap;
   margin: auto;
   padding: auto;
-  margin-bottom: 2rem;
+  margin-bottom: 4em;
 }
 
 .logos__marcas {
@@ -665,13 +671,13 @@ iframe {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (max-width: 768px) {
   .logos {
-    margin-bottom: 3em;
+    margin-bottom: 2em;
   }
 }
 
-/*CONTACTO****************/
+/*CONTACTO Y NOSOTROS****************/
 .titulo-contacto {
   text-align: center;
   margin: 2em 0 .8em;
@@ -704,6 +710,39 @@ article span {
 article span strong {
   color: #202020;
   font-weight: 500;
+}
+
+.sobre-nosotros {
+  margin-bottom: 4em;
+}
+
+.sobre-nosotros .parrafos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media only screen and (max-width: 768px) {
+  .sobre-nosotros .parrafos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.sobre-nosotros .parrafos div p {
+  width: 96%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .sobre-nosotros .parrafos div p {
+    width: 94%;
+  }
 }
 
 /*MUJERES*********************************/
@@ -887,6 +926,12 @@ footer .medios-pago__tarjeta {
   padding: 2rem;
 }
 
+@media only screen and (max-width: 576px) {
+  .catalogo {
+    height: 9em;
+  }
+}
+
 .catalogo .texto-catalogo {
   text-align: center;
 }
@@ -895,11 +940,11 @@ footer .medios-pago__tarjeta {
   .catalogo .texto-catalogo {
     font-size: 1rem;
   }
-}
-
-@media only screen and (max-width: 576px) {
   .catalogo .texto-catalogo P {
     display: none;
+  }
+  .catalogo .texto-catalogo h3 {
+    font-size: 1rem;
   }
 }
 
@@ -997,7 +1042,7 @@ footer .medios-pago__tarjeta {
 }
 
 /*ERROR 404*/
-.error-404, .texto-error {
+.error-404, .texto-error, .luz {
   font-size: 8rem;
   color: #202020;
   font-weight: 700;
@@ -1007,14 +1052,14 @@ footer .medios-pago__tarjeta {
 }
 
 @media only screen and (max-width: 576px) {
-  .error-404, .texto-error {
+  .error-404, .texto-error, .luz {
     font-size: 5rem;
     padding: 2rem 0 0 0;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .error-404, .texto-error {
+  .error-404, .texto-error, .luz {
     padding: 1rem 0 0 0;
   }
 }
@@ -1064,6 +1109,28 @@ footer .medios-pago__tarjeta {
 
 .btn-secondary:hover {
   background-color: #f83b3b;
+  color: #f7f7f7 !important;
+}
+
+/*-----TEXTO NEON-----------------------*/
+.luz.on {
+  color: #f7f7f7;
+  /*color del texto al cambiar*/
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.1), -1px -1px rgba(0, 0, 0, 0.88), 0px 0px 20px #f7f7f7;
+  /*color de la luz del texto*/
+}
+
+.luz {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  padding: 0 0 0 0;
+}
+
+@media only screen and (max-width: 576px) {
+  .luz {
+    font-size: 1.25rem;
+    padding: 0 0 0 0;
+  }
 }
 
 /*FORMULARIO CONTACTO*/
