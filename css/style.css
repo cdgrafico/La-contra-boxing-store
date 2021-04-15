@@ -165,7 +165,7 @@ h3 {
       -ms-flex-order: 1;
           order: 1;
   width: 10rem;
-  margin: 0 3em 0 3em;
+  margin: 0 0 0 3em;
   padding: .5em 0 .5em 0;
 }
 
@@ -353,7 +353,7 @@ h3 {
   width: 90%;
 }
 
-/*Saca el icono X cancelar de la barra de serach*/
+/*Saca el icono X cancelar de la barra de SEARCH*****/
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -629,7 +629,7 @@ iframe {
 
 @media only screen and (max-width: 576px) {
   .titulo--brands {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -678,6 +678,10 @@ iframe {
 }
 
 /*CONTACTO Y NOSOTROS****************/
+.contacto {
+  margin-left: .5em;
+}
+
 .titulo-contacto {
   text-align: center;
   margin: 2em 0 .8em;
@@ -928,7 +932,7 @@ footer .medios-pago__tarjeta {
 
 @media only screen and (max-width: 576px) {
   .catalogo {
-    height: 9em;
+    height: 10em;
   }
 }
 
@@ -945,6 +949,16 @@ footer .medios-pago__tarjeta {
   }
   .catalogo .texto-catalogo h3 {
     font-size: 1rem;
+  }
+}
+
+.catalogo .barra-busqueda--newsletter {
+  min-width: 18em;
+}
+
+@media only screen and (min-width: 768px) {
+  .catalogo .barra-busqueda--newsletter {
+    min-width: 24em;
   }
 }
 
@@ -979,6 +993,18 @@ footer .medios-pago__tarjeta {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 70%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .sitemap {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .sitemap {
+    width: 70%;
+  }
 }
 
 .sitemap h4 {

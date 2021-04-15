@@ -70,7 +70,7 @@
     .logo-contra {
         order: 1;
         width: 10rem;
-        margin: 0 3em 0 3em;
+        margin: 0 0 0 3em;
         padding: .5em 0 .5em 0;
 
         @media only screen and (max-width:768px) {
@@ -226,7 +226,7 @@
 }
 
 
-/*Saca el icono X cancelar de la barra de serach*/
+/*Saca el icono X cancelar de la barra de SEARCH*****/
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
     -webkit-appearance: none;

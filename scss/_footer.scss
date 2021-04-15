@@ -60,7 +60,7 @@ footer {
     padding: 2rem;
 
     @media only screen and (max-width:576px) {
-        height: 9em;
+        height: 10em;
     }
 
     .texto-catalogo {
@@ -81,6 +81,12 @@ footer {
 
 
     .barra-busqueda--newsletter {
+
+        min-width: 18em;
+
+        @media only screen and (min-width:768px) {
+            min-width: 24em;
+        }
 
         @media only screen and (min-width:992px) {
             max-width: 24em;
@@ -112,6 +118,14 @@ footer {
     display: flex;
     justify-content: space-around;
     width: 70%;
+
+    @media only screen and (max-width:1024px) {
+        width: 90%;
+    }
+
+    @media only screen and (max-width:768px) {
+        width: 70%;
+    }
 
     h4 {
         font-size: 1rem;
