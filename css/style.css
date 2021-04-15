@@ -749,6 +749,20 @@ article span strong {
   }
 }
 
+.logo-negro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.logo-negro img {
+  margin-right: 1em;
+  width: 8em;
+}
+
 /*MUJERES*********************************/
 .guerreras {
   position: absolute;
@@ -766,6 +780,28 @@ article span strong {
 }
 
 .guerreras img {
+  /*Las imagenes que son enlaces tienen bordes blancos
+        estos les saca este borde*/
+  border: 0;
+  border-style: none;
+}
+
+.lucha {
+  position: absolute;
+  top: 0;
+  width: 44%;
+  left: 5%;
+}
+
+@media only screen and (max-width: 576px) {
+  .lucha {
+    top: 12%;
+    width: 75%;
+    left: -8%;
+  }
+}
+
+.lucha img {
   /*Las imagenes que son enlaces tienen bordes blancos
         estos les saca este borde*/
   border: 0;

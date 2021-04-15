@@ -230,8 +230,18 @@ article {
                 }
             }
         }
+        }
     }
-}
+
+    .logo-negro{
+        display: flex;
+        justify-content:flex-end;
+
+        img{
+            margin-right: 1em;
+            width: 8em;
+        }
+    }
 
 /*MUJERES*********************************/
 
@@ -240,6 +250,26 @@ article {
     top: 0;
     width: 46%;
     left: 3%;
+
+    @media only screen and (max-width:576px) {
+        top: 12%;
+        width: 75%;
+        left: -8%;
+    }
+
+    img {
+        /*Las imagenes que son enlaces tienen bordes blancos
+        estos les saca este borde*/
+        border: 0;
+        border-style: none;
+    }
+}
+
+.lucha{
+    position: absolute;
+    top: 0;
+    width: 44%;
+    left: 5%;
 
     @media only screen and (max-width:576px) {
         top: 12%;
