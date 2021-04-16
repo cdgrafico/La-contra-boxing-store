@@ -64,7 +64,7 @@
     @media only screen and (max-width:576px) {
         display: flex;
         justify-content: center;
-        padding: 1.5em 0 .5em 0;
+        padding: .5em 0 0 0;
     }
 
     .logo-contra {
@@ -80,6 +80,23 @@
         @media only screen and (max-width:576px) {
             margin: .5em 0 0 2em;
             width: 7rem;
+        }
+    }
+
+    .logo-grande{
+        display: block;
+
+        @media only screen and (max-width:576px) {
+            display: none;
+        }
+    }
+
+    .logo-chico{
+        display: none;
+
+        @media only screen and (max-width:576px) {
+            display: block;
+            padding-bottom: .5em;
         }
     }
 
@@ -171,6 +188,9 @@
     }
 
     @media only screen and (max-width:576px) {
+
+        
+
         order: 0;
         width: 75%;
         border-radius: 20px;
@@ -182,7 +202,6 @@
         svg {
             height: 1.2rem;
         }
-
 
         .search-btn {
             background-color: $red;
@@ -198,6 +217,7 @@
 }
 
 .search-btn {
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -211,6 +231,7 @@
     &:hover {
         background-color: $golden2;
         transition: .3s;
+        
     }
 }
 

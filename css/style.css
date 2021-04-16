@@ -156,7 +156,7 @@ h3 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 1.5em 0 .5em 0;
+    padding: .5em 0 0 0;
   }
 }
 
@@ -179,6 +179,27 @@ h3 {
   .barra-logo .logo-contra {
     margin: .5em 0 0 2em;
     width: 7rem;
+  }
+}
+
+.barra-logo .logo-grande {
+  display: block;
+}
+
+@media only screen and (max-width: 576px) {
+  .barra-logo .logo-grande {
+    display: none;
+  }
+}
+
+.barra-logo .logo-chico {
+  display: none;
+}
+
+@media only screen and (max-width: 576px) {
+  .barra-logo .logo-chico {
+    display: block;
+    padding-bottom: .5em;
   }
 }
 
@@ -446,12 +467,12 @@ form.example button:hover {
     padding: .2rem 0 .2rem 0;
   }
   .navbar .navbar-nav {
-    padding: 0 0 0 1.5em;
     overflow: hidden;
   }
   .navbar .navbar-nav .nav-item {
-    width: 4.5em;
-    padding-bottom: .2em;
+    width: 100%;
+    letter-spacing: .5px;
+    padding: .4em 0 .5em 2em;
   }
   .navbar .navbar-nav .nav-item .nav-link {
     text-align: left;
@@ -461,13 +482,7 @@ form.example button:hover {
     display: inline-block;
   }
   .navbar .navbar-nav .nav-item .nav-link:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: -100%;
-    height: 3px;
-    -webkit-transition: left .3s ease-in-out;
-    transition: left .3s ease-in-out;
+    display: none;
   }
   .navbar .navbar-nav .nav-item .nav-link:hover:after {
     left: 0;
@@ -832,13 +847,24 @@ article span strong {
   top: 0;
   width: 46%;
   left: 3%;
+  /*  .guerreras {
+
+    @media only screen and (max-width:576px) {
+        top: 12%;
+        width: 75%;
+        left: -8%;
+
+        
+    }   */
 }
 
 @media only screen and (max-width: 576px) {
   .guerreras {
-    top: 12%;
-    width: 75%;
-    left: -8%;
+    top: 5%;
+    width: 120%;
+    left: -15%;
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
   }
 }
 

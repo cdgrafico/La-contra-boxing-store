@@ -303,10 +303,21 @@ article {
     left: 3%;
 
     @media only screen and (max-width:576px) {
+        top: 5%;
+        width: 120%;
+        left: -15%; 
+        transform: rotate(-2deg); 
+    }
+
+    /*  .guerreras {
+
+    @media only screen and (max-width:576px) {
         top: 12%;
         width: 75%;
         left: -8%;
-    }
+
+        
+    }   */
 
     img {
         /*Las imagenes que son enlaces tienen bordes blancos
