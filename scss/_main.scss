@@ -7,13 +7,50 @@ main {
     background-color: $darkwhite;
 }
 
-iframe {
-    overflow: hidden;
+/* IFRAME ALTURA RESPONSIVE*******************************/
 
-    @media only screen and (max-width:992px) {
-        height: 470px;
+.iframe-e-comm {
+   
+    @media only screen and (max-width:576px) {
+        height: 3650px;
+        overflow: hidden;
+    }
+
+    @media only screen and (min-width:768px) {
+        height: 2950px;
+        overflow: hidden;
+    }
+
+    @media only screen and (min-width:992px) {
+        height: 2150px;
+        overflow: hidden;
+    }
+
+    @media only screen and (min-width:1200px) {
+        height: 2200px;
+        overflow: hidden;
+    }
+
+    @media only screen and (min-width:1400px) {
+        height: 2050px;
+        overflow: hidden;
+    }
+
+    @media only screen and (min-width:1600px) {
+        height: 2200px;
+        overflow: hidden;
     }
 }
+
+
+.iframe-carrusel {
+    height: 540px;
+
+    @media only screen and (max-width:768px) {
+        height: 500px;
+    }
+}
+
 
 /*VIDEO Y MAPAS*/
 .video {
@@ -23,7 +60,17 @@ iframe {
     padding-bottom: 56%;
     margin-top: 3em;
 
+    @media only screen and (max-width:992px) {
+        height: 470px;
+    }
+
     @media only screen and (max-width:576px) {
+        height: 200px;
+        margin-top: 2em;
+    }
+
+    @media only screen and (min-width:768px) {
+        height: 300px;
         margin-top: 2em;
     }
 
@@ -173,7 +220,7 @@ iframe {
 
 /*CONTACTO Y NOSOTROS****************/
 
-.contacto{
+.contacto {
     margin-left: .5em;
 }
 
@@ -211,7 +258,11 @@ article {
 }
 
 .sobre-nosotros {
-    margin-bottom: 4em;
+    margin: 1em 0 5em 0;
+
+    @media only screen and(max-width:576px) {
+        margin: 0 0 4em 0;
+    }
 
     .parrafos {
         display: flex;
@@ -230,18 +281,18 @@ article {
                 }
             }
         }
-        }
     }
+}
 
-    .logo-negro{
-        display: flex;
-        justify-content:flex-end;
+.logo-negro {
+    display: flex;
+    justify-content: flex-end;
 
-        img{
-            margin-right: 1em;
-            width: 8em;
-        }
+    img {
+        margin-right: 1em;
+        width: 8em;
     }
+}
 
 /*MUJERES*********************************/
 
@@ -265,16 +316,36 @@ article {
     }
 }
 
-.lucha{
+.lucha {
     position: absolute;
     top: 0;
     width: 44%;
-    left: 5%;
+    left: 8%;
 
     @media only screen and (max-width:576px) {
         top: 12%;
-        width: 75%;
-        left: -8%;
+        width: 65%;
+        left: 40%;
+    }
+
+    img {
+        /*Las imagenes que son enlaces tienen bordes blancos
+        estos les saca este borde*/
+        border: 0;
+        border-style: none;
+    }
+}
+
+.amateur {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    left: 29%;
+
+    @media only screen and (max-width:576px) {
+        top: 5%;
+        width: 90%;
+        left: -20%;
     }
 
     img {

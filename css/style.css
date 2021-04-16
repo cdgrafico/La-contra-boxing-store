@@ -485,13 +485,56 @@ main {
   background-color: #f7f7f7;
 }
 
-iframe {
-  overflow: hidden;
+/* IFRAME ALTURA RESPONSIVE*******************************/
+@media only screen and (max-width: 576px) {
+  .iframe-e-comm {
+    height: 3650px;
+    overflow: hidden;
+  }
 }
 
-@media only screen and (max-width: 992px) {
-  iframe {
-    height: 470px;
+@media only screen and (min-width: 768px) {
+  .iframe-e-comm {
+    height: 2950px;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .iframe-e-comm {
+    height: 2150px;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .iframe-e-comm {
+    height: 2200px;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .iframe-e-comm {
+    height: 2050px;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .iframe-e-comm {
+    height: 2200px;
+    overflow: hidden;
+  }
+}
+
+.iframe-carrusel {
+  height: 540px;
+}
+
+@media only screen and (max-width: 768px) {
+  .iframe-carrusel {
+    height: 500px;
   }
 }
 
@@ -504,8 +547,22 @@ iframe {
   margin-top: 3em;
 }
 
+@media only screen and (max-width: 992px) {
+  .video {
+    height: 470px;
+  }
+}
+
 @media only screen and (max-width: 576px) {
   .video {
+    height: 200px;
+    margin-top: 2em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .video {
+    height: 300px;
     margin-top: 2em;
   }
 }
@@ -717,7 +774,13 @@ article span strong {
 }
 
 .sobre-nosotros {
-  margin-bottom: 4em;
+  margin: 1em 0 5em 0;
+}
+
+@media only screen and (max-width: 576px) {
+  .sobre-nosotros {
+    margin: 0 0 4em 0;
+  }
 }
 
 .sobre-nosotros .parrafos {
@@ -790,18 +853,40 @@ article span strong {
   position: absolute;
   top: 0;
   width: 44%;
-  left: 5%;
+  left: 8%;
 }
 
 @media only screen and (max-width: 576px) {
   .lucha {
     top: 12%;
-    width: 75%;
-    left: -8%;
+    width: 65%;
+    left: 40%;
   }
 }
 
 .lucha img {
+  /*Las imagenes que son enlaces tienen bordes blancos
+        estos les saca este borde*/
+  border: 0;
+  border-style: none;
+}
+
+.amateur {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  left: 29%;
+}
+
+@media only screen and (max-width: 576px) {
+  .amateur {
+    top: 5%;
+    width: 90%;
+    left: -20%;
+  }
+}
+
+.amateur img {
   /*Las imagenes que son enlaces tienen bordes blancos
         estos les saca este borde*/
   border: 0;
