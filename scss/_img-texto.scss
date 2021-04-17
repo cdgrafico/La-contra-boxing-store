@@ -60,6 +60,10 @@
   text-shadow: 0 0 1px rgb(0, 0, 0), 0 1px 2px rgba(0, 0, 0, 0.3);
   transition: all 0.35s ease-in-out;
 
+  @media only screen and (max-width: 1024px) {
+    display: none;
+  }
+
   @media only screen and (max-width: 992px) {
     padding: 40% 0 0 0;
   }
@@ -72,7 +76,6 @@
   @media only screen and (max-width: 576px) {
     font-size: 1.4rem;
     padding: 30% 0 0 0;
-
   }
 }
 
@@ -86,6 +89,10 @@
   text-shadow: 0 0 1px rgb(0, 0, 0), 0 1px 2px rgba(0, 0, 0, 0.3);
   transition: all 0.35s ease-in-out;
 
+  @media only screen and (max-width: 1024px) {
+    display: none;
+  }
+
   @media only screen and (max-width: 576px) {
     border-top: 4px solid $golden2;
     font-size: .8rem;
@@ -94,16 +101,19 @@
   @media only screen and (max-width: 768px) {
     font-size: .9rem;
   }
-
 }
 
 .ih-item.circle.effect13 a:hover .img {
   transform: scale(1.05);
-
   filter: contrast(1.1);
   transition: all 0.35s ease-in-out;
-}
 
+  @media only screen and (max-width: 576px) {
+  transform: scale(1);
+  filter: contrast(1);
+  }
+
+}
 
 .ih-item.circle.effect13 a:hover .info {
   opacity: 1;

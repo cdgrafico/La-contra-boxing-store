@@ -3,8 +3,6 @@
 /*MEDIA QUERY BREAKPOINTS*/
 
 @media only screen and (min-width:576px) {
-    /* Los estilos de acá solo se aplicarán a partir
-    del tamaño de pantalla indicado */
 
     .anuncio {
         font-size: 1rem;
@@ -12,42 +10,6 @@
 
     .cuenta__img--nodisplay {
         display: block;
-    }
-
-    .cabecera {
-        display: flex;
-        flex-direction: row;
-
-        &__img-lg {
-            display: block;
-            border: 0;
-        }
-
-        &__img-sm {
-            display: none;
-            border: 0;
-        }
-    }
-
-    .categoria {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-
-        &__imagen {
-            height: 100%;
-
-            img {
-                transition: .3s ease-in-out;
-
-                &:hover {
-                    transform: scale(1.05);
-                    transition: .3s ease-in-out;
-                    filter: brightness(70%);
-                    filter: contrast(110%);
-                }
-            }
-        }
     }
 }
 
