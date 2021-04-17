@@ -91,7 +91,7 @@ main {
 
 .cabecera {
     padding: 0 0 0 0;
-    background-color: black;
+    background-color: $darkgrey;
 
     &__img-lg {
         display: none;
@@ -114,32 +114,49 @@ main {
             left: 48%;
 
             @media only screen and (max-width:576px) {
+                top: 3%;
+                width: 82%;
+                left: 5%;
+                transform: rotate(-3deg);
+            }
+
+            /*.campeones {
+            @media only screen and (max-width:576px) {
                 top: 6%;
                 width: 54%;
                 left: 3%;
-            }
+            }*/
         }
 
         .temporada {
             position: absolute;
             line-height: 120%;
 
-            /*con VH (viewport width) el el texto es "responsive", toma el tamano del ancho del viewport*/
-            font-size: 3.6vw;
-            /* 2% del tamaño del viewport*/
-            font-weight: 600;
-            color: $golden2;
-            top: 70%;
-            left: 6%;
-            width: auto;
-            height: auto;
-            text-align: center;
-
-            @media only screen and (min-width:576px) {
-                font-size: 2.5vw;
+            font-size: 2.5vw;
                 top: 75%;
                 left: 52%;
                 width: 40%;
+            font-weight: 600;
+            color: $golden2;
+            text-align: center;
+
+            /* @media only screen and (max-width:576px) {
+            font-size: 3.6vw;
+            top: 70%;
+            left: 6%;
+            }*/
+
+            @media only screen and (max-width:576px) {
+                /*con VH (viewport width) el el texto es "responsive", toma el tamano del ancho del viewport*/
+            font-size: 4vw;/* 5% del tamaño del viewport*/
+            width: 64%;
+            left: 18%;
+            top: 82%;
+
+            font-weight: 500;
+            background-color: $darkgrey;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+            padding: .5rem;
             }
 
             @media only screen and (min-width:1400px) {
@@ -161,7 +178,7 @@ main {
     }
 
     .img {
-        background-color: $black;
+        background-color: $darkgrey;
     }
 }
 
@@ -334,10 +351,20 @@ article {
     left: 8%;
 
     @media only screen and (max-width:576px) {
+        top: 55%;
+        width: 97%;
+        left: 5%;
+        transform: rotate(3deg);
+    }
+
+
+    /* .lucha {
+
+    @media only screen and (max-width:576px) {
         top: 12%;
         width: 65%;
         left: 40%;
-    }
+    }  */
 
     img {
         /*Las imagenes que son enlaces tienen bordes blancos
@@ -354,10 +381,18 @@ article {
     left: 29%;
 
     @media only screen and (max-width:576px) {
+        top: 50%;
+        width: 120%;
+        left: -20%;
+        transform: rotate(-5deg);
+    }
+
+    /* .amateur {
+    @media only screen and (max-width:576px) {
         top: 5%;
         width: 90%;
         left: -20%;
-    }
+    }  */
 
     img {
         /*Las imagenes que son enlaces tienen bordes blancos

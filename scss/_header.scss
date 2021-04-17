@@ -78,7 +78,7 @@
         }
 
         @media only screen and (max-width:576px) {
-            margin: .5em 0 0 2em;
+            margin: 0 0 .25em 2em;
             width: 7rem;
         }
     }
@@ -96,7 +96,8 @@
 
         @media only screen and (max-width:576px) {
             display: block;
-            padding-bottom: .5em;
+            padding: .25em 0 .25em 0;
+            
         }
     }
 
@@ -115,6 +116,11 @@
             width: 10em;
             padding: 0 .5em 0 .5em;
             margin: 1em 1em 0 0;
+        }
+
+        @media only screen and (max-width:576px) {
+            margin-top: 0;
+            padding-top: .8em;
         }
 
         &__usuario {
@@ -160,6 +166,7 @@
     }
 }
 
+
 /*BARRA BUSQUEDA*/
 
 .barra-busqueda {
@@ -189,8 +196,6 @@
 
     @media only screen and (max-width:576px) {
 
-        
-
         order: 0;
         width: 75%;
         border-radius: 20px;
@@ -217,7 +222,6 @@
 }
 
 .search-btn {
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -229,6 +233,7 @@
     transition: .3s;
 
     &:hover {
+
         background-color: $golden2;
         transition: .3s;
         

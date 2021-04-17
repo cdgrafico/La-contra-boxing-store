@@ -22,6 +22,24 @@ body {
   font-size: 1.75rem;
 }
 
+@media only screen and (max-width: 576px) {
+  .titulo, .titulo-ofertas {
+    display: none;
+  }
+}
+
+.titulo__segundo {
+  display: none;
+  text-align: left;
+}
+
+@media only screen and (max-width: 576px) {
+  .titulo__segundo {
+    display: block;
+    font-size: 1.5rem;
+  }
+}
+
 .titulo-ofertas {
   color: #daa41e;
 }
