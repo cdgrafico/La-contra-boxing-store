@@ -20,8 +20,8 @@ responsive:
 575:{items:2},
 768:{items:3},
 991:{items:4},
-1199:{items:6},
-1700:{items:7},
+1199:{items:5},
+1700:{items:6},
 }
 });
 
