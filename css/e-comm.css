@@ -11,6 +11,16 @@ body {
   background-color: #f7f7f7;
 }
 
+.pt-5 {
+  padding-top: 3em !important;
+}
+
+@media only screen and (max-width: 576px) {
+  .pt-5 {
+    padding-top: 2em !important;
+  }
+}
+
 /*No se ven los botones FLECHA*/
 .boton-gris {
   display: none;

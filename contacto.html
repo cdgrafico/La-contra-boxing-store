@@ -57,7 +57,7 @@
                             height="50px" alt="logo-la-contra"></a>
                 </div>
 
-                <div class="barra-busqueda">
+                <div id="buscar" class="barra-busqueda barra-busqueda--buscador">
                     <input id="search" class="search-txt" type="search" name=""
                         placeholder="Guantes, protecciones, bolsas">
                     <a class="search-btn" href="productos.html"><img src="multimedia/index/search-white-24dp.svg"
@@ -83,6 +83,11 @@
                     <a href="error-404.html"><span class="material-icons-round cart">
                             shopping_cart
                         </span></a>
+
+                         <!-- ICONO DE BUSCAR QUE MUESTRA LA BARRA AL CLIECKEAR CON JS**** -->
+                <a href="#"onclick="toggle_visibility('buscar');" class="buscar-icon"><span class="material-icons-round search">
+                    search
+                </span></a>
                 </div>
 
             </div>
@@ -375,6 +380,9 @@
     </footer>
 
     </div>
+
+    <!-- BARRA BUSCADOR QUE SE MUESTRA AL CLICKEAR -->
+    <script type="text/javascript" src="js/barra-buscador.js"> </script>
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"

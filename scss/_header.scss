@@ -58,13 +58,13 @@
     display: flex;
     align-items: center;
     background-color: $red;
-    padding: 1.5rem 0 1.5rem 0;
+    padding: 1rem 0 1rem 0;
     color: $white;
 
     @media only screen and (max-width:576px) {
         display: flex;
         justify-content: center;
-        padding: .5em 0 0 0;
+        padding: 0 0 0 0;
     }
 
     .logo-contra {
@@ -78,7 +78,7 @@
         }
 
         @media only screen and (max-width:576px) {
-            margin: 0 0 .25em 2em;
+            margin: 0 0 .25em 1.5em;
             width: 7rem;
         }
     }
@@ -112,6 +112,10 @@
         transition: .3s;
         padding: 0 .5em 0 .5em;
 
+        .buscar-icon{
+            display:none
+        }
+
         @media only screen and (max-width:768px) {
             width: 10em;
             padding: 0 .5em 0 .5em;
@@ -119,8 +123,13 @@
         }
 
         @media only screen and (max-width:576px) {
-            margin-top: 0;
-            padding-top: .8em;
+            margin: 0 1em 0 0;
+            padding: .8em 0 0 0;
+            width: 10.5em;
+
+            .buscar-icon{
+                display:block
+            }
         }
 
         &__usuario {
@@ -200,8 +209,7 @@
         width: 75%;
         border-radius: 20px;
         height: 38px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 1em auto 0 auto;
 
         img,
         svg {
@@ -219,6 +227,16 @@
             font-size: .9rem;
         }
     }
+
+    &--buscador{
+        @media only screen and (max-width:576px) {
+            display:none
+        }
+    }
+}
+
+#buscar{
+    transition: all .35s;
 }
 
 .search-btn {

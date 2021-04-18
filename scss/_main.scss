@@ -10,7 +10,7 @@ main {
 /* IFRAME ALTURA RESPONSIVE*******************************/
 
 .iframe-e-comm {
-   
+
     @media only screen and (max-width:576px) {
         height: 3650px;
         overflow: hidden;
@@ -104,19 +104,19 @@ main {
     }
 
     @media only screen and (max-width:576px) {
-        
-            display: flex;
-            flex-direction: row;
-    
-            &__img-lg {
-                display: none;
-                border: 0;
-            }
-    
-            &__img-sm {
-                display: block;
-                border: 0;
-            }   
+
+        display: flex;
+        flex-direction: row;
+
+        &__img-lg {
+            display: none;
+            border: 0;
+        }
+
+        &__img-sm {
+            display: block;
+            border: 0;
+        }
     }
 
     .texto-cabecera {
@@ -148,9 +148,9 @@ main {
             position: absolute;
             line-height: 120%;
             font-size: 2.5vw;
-                top: 75%;
-                left: 52%;
-                width: 40%;
+            top: 75%;
+            left: 52%;
+            width: 40%;
             font-weight: 600;
             color: $golden2;
             text-align: center;
@@ -163,15 +163,16 @@ main {
 
             @media only screen and (max-width:576px) {
                 /*con VH (viewport width) el el texto es "responsive", toma el tamano del ancho del viewport*/
-            font-size: 4vw;/* 5% del tamaño del viewport*/
-            width: 64%;
-            left: 18%;
-            top: 82%;
+                font-size: 4vw;
+                /* 5% del tamaño del viewport*/
+                width: 64%;
+                left: 18%;
+                top: 82%;
 
-            font-weight: 500;
-            background-color: $darkgrey;
-            box-shadow: 0px 8px 15px $darkgrey(206, 28, 28, 0.5);
-            padding: .5rem;
+                font-weight: 500;
+                background-color: $darkgrey;
+                box-shadow: 0px 8px 15px rgba(20, 20, 20, 1);
+                padding: .5rem;
             }
 
             @media only screen and (min-width:1400px) {
@@ -182,6 +183,7 @@ main {
 }
 
 .categoria {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -191,10 +193,9 @@ main {
         height: 100%;
         overflow: hidden;
         transition: .5s;
-        z-index: 10;
 
         img {
-/*los efectos HOVER de las img estan en _img-texto.scss */
+            /*los efectos HOVER de las img estan en _img-texto.scss */
 
             transition: .3s ease-in-out;
             background-color: $darkgrey;
@@ -205,32 +206,65 @@ main {
                     display: none;
                     border: 0;
                 }
-        
+
                 &__img-sm {
                     display: block;
                     border: 0;
-                }     
+                }
             }
-        }
-    }
-
-    button{
-        position: absolute;
-        background-color: $darkwhite;
-        color: $darkgrey;
-        width: 70%;
-        margin: auto;
-
-        h3, span{
-            color: $darkgrey;
-            margin-bottom:0;
         }
     }
 
     @media only screen and (max-width:576px) {
         flex-direction: column;
     }
+}
 
+.btn-cate {
+    display: none;
+    position: absolute;
+    top: 75%;
+    width: 40%;
+    left: 30%;
+
+    text-align: center;
+    background-color: $darkgrey;
+line-height: 1rem;
+    margin: auto;
+    box-shadow: 0px 8px 15px rgba(20, 20, 20, 1);
+
+    @media only screen and (max-width:768px) {
+        display: block;
+        top: 72%;
+    }
+
+    @media only screen and (max-width:576px) {
+        display: block;
+        top: 72%;
+        width: 36%;
+        left: 32%;
+    }
+
+    @media only screen and (max-width:1024px) {
+        display: block; 
+    }
+
+
+
+    h3 {
+        font-size: 1.1rem;
+        color: $darkwhite;
+        margin-bottom: 0;
+        padding: .5em;
+
+        @media only screen and (max-width:768px) {
+            font-size: .9rem;
+        }
+
+        @media only screen and (max-width:576px) {
+            font-size: 1.1rem;
+        }
+    }
 
 }
 
@@ -374,8 +408,8 @@ article {
     @media only screen and (max-width:576px) {
         top: 5%;
         width: 120%;
-        left: -15%; 
-        transform: rotate(-2deg); 
+        left: -15%;
+        transform: rotate(-2deg);
     }
 
     /* CONFIGURACIÓN ORIGINAL  .guerreras {
