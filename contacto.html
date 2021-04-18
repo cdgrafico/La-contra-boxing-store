@@ -57,7 +57,7 @@
                             height="50px" alt="logo-la-contra"></a>
                 </div>
 
-                <div id="buscar" class="barra-busqueda barra-busqueda--buscador">
+                <div id="searchbar" class="barra-busqueda barra-busqueda--buscador">
                     <input id="search" class="search-txt" type="search" name=""
                         placeholder="Guantes, protecciones, bolsas">
                     <a class="search-btn" href="productos.html"><img src="multimedia/index/search-white-24dp.svg"
@@ -84,60 +84,61 @@
                             shopping_cart
                         </span></a>
 
-                         <!-- ICONO DE BUSCAR QUE MUESTRA LA BARRA AL CLIECKEAR CON JS**** -->
-                <a href="#"onclick="toggle_visibility('buscar');" class="buscar-icon"><span class="material-icons-round search">
-                    search
-                </span></a>
-                </div>
-
+                    <!-- ICONO DE BUSCAR QUE MUESTRA LA BARRA AL CLIECKEAR CON JQUERY**** -->
+                    <a href="#" id="btnsearch" class="buscar-icon"><span
+                        class="material-icons-round search">
+                        search
+                    </span></a>
             </div>
 
+                </div>
 
-            <!-- NAV BAR BS -->
-            <nav class="navbar navbar-expand-lg navbar-light col-xxl-10">
-                <div class="container-fluid ">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <img src="multimedia/index/menu-white-24dp.svg" height="32px" alt="">
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link " href="index.html">Inicio</a>
-                            <li class="nav-item">
-                                <a class="nav-link" href="productos.html">Nuevos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="ofertas.html">Ofertas</a>
-                            </li>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " href="mujeres.html">Mujeres</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " href="hombres.html">Hombres</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " href="kids.html">Niños</a>
-                            </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="nosotros.html">Nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contacto.html">Contacto</a>
-                            </li>
-                        </ul>
+                <!-- NAV BAR BS -->
+                <nav class="navbar navbar-expand-lg navbar-light col-xxl-10">
+                    <div class="container-fluid ">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <img src="multimedia/index/menu-white-24dp.svg" height="32px" alt="">
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link " href="index.html">Inicio</a>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="productos.html">Nuevos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="ofertas.html">Ofertas</a>
+                                </li>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="mujeres.html">Mujeres</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="hombres.html">Hombres</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="kids.html">Niños</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contacto.html">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
 
-            <div>
-                <div class="anuncio">
-                    <span class="anuncio__descuento anuncio__descuento--dos">Asesoramiento en compras al por mayor y
-                        menor</span>
-                </div>
+                <div>
+                    <div class="anuncio">
+                        <span class="anuncio__descuento anuncio__descuento--dos">Asesoramiento en compras al por mayor y
+                            menor</span>
+                    </div>
 
         </header>
 
@@ -380,6 +381,8 @@
     </footer>
 
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- BARRA BUSCADOR QUE SE MUESTRA AL CLICKEAR -->
     <script type="text/javascript" src="js/barra-buscador.js"> </script>

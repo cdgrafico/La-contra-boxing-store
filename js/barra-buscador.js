@@ -1,7 +1,8 @@
-function toggle_visibility(id) {
-    var e = document.getElementById(id);
-    if(e.style.display == 'flex')
-       e.style.display = 'none';
-    else
-       e.style.display = 'flex';
- }
+ $(document).ready(function(){
+   $("#btnsearch").click(function(){
+     $("#searchbar").slideToggle("50");
+     $("#searchbar").css('display','flex');
+   });
+ });
+ 
+ // Jquery sacado de  https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_slide_toggle

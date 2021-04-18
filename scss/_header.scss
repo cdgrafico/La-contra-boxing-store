@@ -165,6 +165,11 @@
             &:hover {
                 color: $golden2;
                 transition: .3s;
+
+                @media only screen and (max-width:1024px) {
+                    color: $darkwhite;
+                }
+
             }
         }
 
@@ -233,10 +238,6 @@
             display:none
         }
     }
-}
-
-#buscar{
-    transition: all .35s;
 }
 
 .search-btn {

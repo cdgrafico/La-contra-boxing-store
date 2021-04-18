@@ -56,7 +56,7 @@
                             height="50px" alt="logo-la-contra"></a>
                 </div>
 
-                <div id="buscar" class="barra-busqueda barra-busqueda--buscador">
+                <div id="searchbar" class="barra-busqueda barra-busqueda--buscador">
                     <input id="search" class="search-txt" type="search" name=""
                         placeholder="Guantes, protecciones, bolsas">
                     <a class="search-btn" href="productos.html"><img src="multimedia/index/search-white-24dp.svg"
@@ -83,11 +83,11 @@
                             shopping_cart
                         </span></a>
 
-                    <!-- ICONO DE BUSCAR QUE MUESTRA LA BARRA AL CLIECKEAR CON JS**** -->
-                    <a href="#" onclick="toggle_visibility('buscar');" class="buscar-icon"><span
-                            class="material-icons-round search">
-                            search
-                        </span></a>
+                    <!-- ICONO DE BUSCAR QUE MUESTRA LA BARRA AL CLIECKEAR CON JQUERY**** -->
+                    <a href="#" id="btnsearch" class="buscar-icon"><span
+                        class="material-icons-round search">
+                        search
+                    </span></a>
                 </div>
 
             </div>
@@ -325,6 +325,8 @@
     </footer>
 
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- BARRA BUSCADOR QUE SE MUESTRA AL CLICKEAR -->
     <script type="text/javascript" src="js/barra-buscador.js"> </script>
