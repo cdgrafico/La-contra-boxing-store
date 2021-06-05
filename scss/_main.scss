@@ -44,10 +44,10 @@ main {
 
 
 .iframe-carrusel {
-    height: 540px;
+    height: 600px;
 
     @media only screen and (max-width:768px) {
-        height: 500px;
+        height: 540px;
     }
 }
 
@@ -274,11 +274,11 @@ line-height: 1rem;
     overflow: hidden;
     text-align: center;
 
-    padding: 1em 0 1em 0;
+    padding: 1.5em 0 0 0;
 
     @media only screen and (min-width:1200px) {
         transform: scale(1.1);
-        padding: 1.5em 0 1.5em 0;
+        padding: 2.5em 0 1em 0;
     }
 
     &--brands {
@@ -293,9 +293,19 @@ line-height: 1rem;
 
 }
 
+.texto-marcas{
+    width: 70%;
+    text-align: center;
+    margin: 0 auto 5em auto;
+
+    @media only screen and (max-width:768px){
+        text-align: left;
+    }
+}
+
 .logos {
     @include logos;
-    margin-bottom: 4em;
+    margin-bottom: 6em;
 
     &__marcas {
         width: 9vw;
