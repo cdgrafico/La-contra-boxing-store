@@ -271,6 +271,8 @@ line-height: 1rem;
 /*MARCAS*/
 
 .titulo {
+
+  
     overflow: hidden;
     text-align: center;
 
@@ -305,7 +307,7 @@ line-height: 1rem;
 
 .logos {
     @include logos;
-    margin-bottom: 6em;
+    margin-bottom: 8em;
 
     &__marcas {
         width: 9vw;
