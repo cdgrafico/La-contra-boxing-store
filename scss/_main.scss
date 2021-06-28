@@ -280,7 +280,7 @@ line-height: 1rem;
 
     @media only screen and (min-width:1200px) {
         transform: scale(1.1);
-        padding: 2.5em 0 1em 0;
+        padding: 3em 0 1em 0;
     }
 
     &--brands {
@@ -292,7 +292,6 @@ line-height: 1rem;
             font-size: 1.4rem;
         }
     }
-
 }
 
 .texto-marcas{
@@ -307,7 +306,7 @@ line-height: 1rem;
 
 .logos {
     @include logos;
-    margin-bottom: 8em;
+    margin-bottom: 10gem;
 
     &__marcas {
         width: 9vw;

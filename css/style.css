@@ -841,7 +841,7 @@ main {
   .titulo {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
-    padding: 2.5em 0 1em 0;
+    padding: 3em 0 1em 0;
   }
 }
 
@@ -880,7 +880,7 @@ main {
       flex-wrap: wrap;
   margin: auto;
   padding: auto;
-  margin-bottom: 8em;
+  margin-bottom: 10gem;
 }
 
 .logos__marcas {
