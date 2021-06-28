@@ -292,6 +292,7 @@ line-height: 1rem;
             font-size: 1.4rem;
         }
     }
+
 }
 
 .texto-marcas{
@@ -306,7 +307,7 @@ line-height: 1rem;
 
 .logos {
     @include logos;
-    margin-bottom: 10gem;
+    margin-bottom: 10em;
 
     &__marcas {
         width: 9vw;
